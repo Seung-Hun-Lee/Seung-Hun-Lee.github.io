@@ -31,9 +31,9 @@ I am **Seunghun Lee**, a Ph. D. student at DGIST, under the guidance of Prof. [S
 
 **<U>Seunghun Lee</U>**, Jiwan Seo, Kiljoon Han, Minwoo Choi, Sunghoon Im
 
-<!--
-[**Paper**](https://openaccess.thecvf.com/content/WACV2024/html/Kim_Offline-to-Online_Knowledge_Distillation_for_Video_Instance_Segmentation_WACV_2024_paper.html) \| [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) 
--->
+
+[**Paper**](https://arxiv.org/abs/2407.03010) \| [**Project**](https://seung-hun-lee.github.io/projects/CAVIS/) 
+
 
 </div>
 </div>
