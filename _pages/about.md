@@ -29,7 +29,7 @@ I am **Seunghun Lee**, a Ph. D. student at DGIST, under the guidance of Prof. [S
 
 **CAVIS: Context-Aware Video Instance Segmentation**
 
-**<U>Seunghun Lee</U>**, Jiwan Seo, Kiljoon Han, Minwoo Choi, Sunghoon Im
+**<U>Seunghun Lee*</U>**, Jiwan Seo*, Kiljoon Han, Minwoo Choi, Sunghoon Im
 
 
 [**Paper**](https://arxiv.org/abs/2407.03010) \| [**Project**](https://seung-hun-lee.github.io/projects/CAVIS/) 
