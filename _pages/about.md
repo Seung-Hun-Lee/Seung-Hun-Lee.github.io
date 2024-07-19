@@ -113,6 +113,7 @@ Changjae Kim, **<U>Seunghun Lee</U>**, Sunghoon Im
   - *2024*, International Conference on Machine Learning (ICML)
   - *2024*, European Conference on Computer Vision (ECCV)
   - *2024*, Pacific Graphics
+  - *2024*, Association for the Advancement of Artificial Intelligence (AAAI)
 + Advanced Studies
   - *2023*, International Computer Vision Summer School (ICVSS)
 
