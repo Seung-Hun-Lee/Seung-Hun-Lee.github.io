@@ -16,8 +16,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am **Seunghun Lee**, a Ph. D. student at DGIST, under the guidance of Prof. [Sunghoon Im](https://sunghoonim.github.io/).  I have previously conducted research on domain adaptation and image-to-image translation. Currently, I am interested in object-centric video tasks such as video instance segmentation (VIS) and video object segmentation (VOS).
-
+I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Science and Technology, Daegu, Republic of Korea) under the supervision of Prof. [Sunghoon Im](https://sunghoonim.github.io/). I received my B.S. degree in Convergence Engineering from DGIST. My previous research focused on domain adaptation using image-to-image translation. Currently, my research interests lie in object-centric video tasks such as Video Instance Segmentation (VIS) and Referring Video Object Segmentation. I am fortunate to have the opportunity to visit Stanford University starting this September, supervised by Prof. [Ehsan Adeli](https://stanford.edu/~eadeli/).
 
 # 🔥 News
 - *2024.09*: I join Stanford University as a visiting researcher. 
@@ -114,6 +113,7 @@ Changjae Kim, **<U>Seunghun Lee</U>**, Sunghoon Im
   - *2024*, European Conference on Computer Vision (ECCV)
   - *2024*, Pacific Graphics
   - *2024*, Association for the Advancement of Artificial Intelligence (AAAI)
+  - *2024*, International Conference on Learning Representations (ICLR)
 + Advanced Studies
   - *2023*, International Computer Vision Summer School (ICVSS)
 
