@@ -40,7 +40,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 **CAVIS: Context-Aware Video Instance Segmentation**
 
-**<U>Seunghun Lee*</U>**, Jiwan Seo*, Kiljoon Han, Minwoo Choi, Sunghoon Im†
+**<U>Seunghun Lee\*</U>**, Jiwan Seo\*, Kiljoon Han, Minwoo Choi, Sunghoon Im†
 
 [**Paper**](https://arxiv.org/abs/2407.03010) \| [**Project**](https://seung-hun-lee.github.io/projects/CAVIS/) \| [**Code**](https://github.com/Seung-Hun-Lee/CAVIS) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/CAVIS?style=social&label=CAVIS%20Stars)](https://github.com/Seung-Hun-Lee/CAVIS)
 
@@ -53,7 +53,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 **Style-Editor: Text-driven object-centric style editing** <span style="color:red">(Highlight, Top 3.7%)</span>
 
-Jihun Park*, Jongmin Gim*, Kyoungmin Lee*, **<U>Seunghun Lee</U>**, Sunghoon Im†
+Jihun Park\*, Jongmin Gim\*, Kyoungmin Lee\*, **<U>Seunghun Lee</U>**, Sunghoon Im†
 
 [**Paper**](https://openaccess.thecvf.com/content/CVPR2025/html/Park_Style-Editor_Text-driven_Object-centric_Style_Editing_CVPR_2025_paper.html) \| [**Project**](https://jihun999.github.io/projects/Style-Editor/)
 
