@@ -24,14 +24,12 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 # 📝 Publications 
 ## 🚀 Recent Works
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/LOMM_ICCV_2025.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Latest Object Memory Management for Temporally Consistent Video Instance Segmentation**
 
-**<U>Seunghun Lee*</U>**, Jiwan Seo*, Kiljoon Han, Minwoo Choi, Sunghoon Im†
-
+**<U>Seunghun Lee</U>**, Jiwan Seo, Minwoo Choi, Kiljoon Han, Jaehoon Jeong, Zane Durante, Ehsan Adeli†, Sang Hyun Park, Sunghoon Im†
 
 </div>
 </div>
@@ -55,7 +53,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 **Style-Editor: Text-driven object-centric style editing**
 
-Jihun Park*, Jongmin Gim*, Kyoungmin Lee*, **<U>Seunghun Lee*</U>**, Sunghoon Im†
+Jihun Park*, Jongmin Gim*, Kyoungmin Lee*, **<U>Seunghun Lee</U>**, Sunghoon Im†
 
 [**Paper**](https://openaccess.thecvf.com/content/CVPR2025/html/Park_Style-Editor_Text-driven_Object-centric_Style_Editing_CVPR_2025_paper.html) \| [**Project**](https://jihun999.github.io/projects/Style-Editor/)
 
