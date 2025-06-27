@@ -51,7 +51,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/Style-Editor_CVPR_2025.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Style-Editor: Text-driven object-centric style editing**
+**Style-Editor: Text-driven object-centric style editing** <span style="color:red">(Highlight, Top 3.7%)</span>
 
 Jihun Park*, Jongmin Gim*, Kyoungmin Lee*, **<U>Seunghun Lee</U>**, Sunghoon Im†
 
@@ -63,10 +63,10 @@ Jihun Park*, Jongmin Gim*, Kyoungmin Lee*, **<U>Seunghun Lee</U>**, Sunghoon Im�
 
 ## 📚 Others
 
-- ``WACV 2024`` <span style="color:red">(Oral)</span> [Offline-to-Online Knowledge Distillation for Video Instance Segmentation](https://openaccess.thecvf.com/content/WACV2024/html/Kim_Offline-to-Online_Knowledge_Distillation_for_Video_Instance_Segmentation_WACV_2024_paper.html), Hojin Kim, **<U>Seunghun Lee</U>**, Hyeon Kang, Sunghoon Im
+- ``WACV 2024`` <span style="color:red">(Oral, Top 2.6%)</span> [Offline-to-Online Knowledge Distillation for Video Instance Segmentation](https://openaccess.thecvf.com/content/WACV2024/html/Kim_Offline-to-Online_Knowledge_Distillation_for_Video_Instance_Segmentation_WACV_2024_paper.html), Hojin Kim, **<U>Seunghun Lee</U>**, Hyeon Kang, Sunghoon Im
 - ``BMVC 2023`` [Multi-Target Domain Adaptation with Class-Wise Attribute Transfer in Semantic Segmentation](https://papers.bmvc2023.org/0633.pdf), Changjae Kim, **<U>Seunghun Lee</U>**, Sunghoon Im
 - ``CVPR 2022`` [ADAS: A Direct Adaptation Strategy for Multi-Target Domain Adaptive Semantic Segmentation](https://openaccess.thecvf.com/content/CVPR2022/html/Lee_ADAS_A_Direct_Adaptation_Strategy_for_Multi-Target_Domain_Adaptive_Semantic_CVPR_2022_paper.html), **<U>Seunghun Lee</U>**, Wonhyeok Choi, Changjae Kim, Minwoo Choi, Sunghoon Im \| [**Code**](https://github.com/Seung-Hun-Lee/ADAS) 
-- ``CVPR 2021`` <span style="color:red">(Oral)</span> [DRANet: Disentangling Representation and Adaptation Networks for Unsupervised Cross-Domain Adaptation](https://openaccess.thecvf.com/content/CVPR2021/html/Lee_DRANet_Disentangling_Representation_and_Adaptation_Networks_for_Unsupervised_Cross-Domain_Adaptation_CVPR_2021_paper.html), Hojin Kim, **<U>Seunghun Lee</U>**, Sunghyun Cho, Sunghoon Im \| [**Code**](https://github.com/Seung-Hun-Lee/DRANet)
+- ``CVPR 2021`` [DRANet: Disentangling Representation and Adaptation Networks for Unsupervised Cross-Domain Adaptation](https://openaccess.thecvf.com/content/CVPR2021/html/Lee_DRANet_Disentangling_Representation_and_Adaptation_Networks_for_Unsupervised_Cross-Domain_Adaptation_CVPR_2021_paper.html), Hojin Kim, **<U>Seunghun Lee</U>**, Sunghyun Cho, Sunghoon Im \| [**Code**](https://github.com/Seung-Hun-Lee/DRANet)
 
 
 # 🎖 Honors and Awards
