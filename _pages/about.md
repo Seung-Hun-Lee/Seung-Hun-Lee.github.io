@@ -83,14 +83,14 @@ Jihun Park\*, Jongmin Gim\*, Kyoungmin Lee\*, **<U>Seunghun Lee</U>**, Sunghoon 
 
 # 📖 Academic Activities
 + Reviewer
-  - *2023 - 2024*, IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
-  - *2023 - 2024*, Conference on Neural Information Processing Systems (NeurIPS)
-  - *2023*, IEEE International Conference on Computer Vision (ICCV)
-  - *2024*, International Conference on Machine Learning (ICML)
-  - *2024*, European Conference on Computer Vision (ECCV)
+  - *2023 - present*, IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+  - *2023 - present*, Conference on Neural Information Processing Systems (NeurIPS)
+  - *2023 - present*, IEEE International Conference on Computer Vision (ICCV)
+  - *2024 - present*, International Conference on Machine Learning (ICML)
+  - *2024 - present*, European Conference on Computer Vision (ECCV)
+  - *2024 - present*, Association for the Advancement of Artificial Intelligence (AAAI)
+  - *2024 - present*, International Conference on Learning Representations (ICLR)
   - *2024*, Pacific Graphics
-  - *2024*, Association for the Advancement of Artificial Intelligence (AAAI)
-  - *2024*, International Conference on Learning Representations (ICLR)
 + Advanced Studies
   - *2023*, International Computer Vision Summer School (ICVSS)
 
