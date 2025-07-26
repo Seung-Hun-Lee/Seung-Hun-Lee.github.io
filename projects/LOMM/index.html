@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Latest Object Memory Management for Temporally Consistent Video Instance Segmentation.">
+  <meta name="keywords" content="LOMM, VIS, Memory">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOMM: Latest Object Memory Management for Temporally Consistent Video Instance Segmentation</title>
+  <style>
+    .rotated-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .video-wrapper {
+      width: 280px;
+      /* 고정된 너비 */
+      height: 200px;
+      /* 고정된 높이 */
+      margin: 10px;
+      /* 각 비디오 사이 여백 */
+      overflow: hidden;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      /* 비디오 너비 100% */
+      height: 100%;
+      /* 비디오 높이 100% */
+      object-fit: cover;
+      /* 비디오 비율 유지 및 오버플로우 처리 */
+    }
+
+    .custom-title {
+      font-size: 2.5rem;
+      /* 원하는 폰트 크기로 조정 */
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="icon" href="./images/cvlabLOGO.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://seung-hun-lee.github.io/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://seung-hun-lee.github.io/projects/CAVIS/">
+              CAVIS
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">LOMM: Latest Object Memory Management for Temporally Consistent
+              Video Instance Segmentation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://seung-hun-lee.github.io">Seunghun Lee</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://Seo-jiwan.github.io">Jiwan Seo</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://cvlab.dgist.ac.kr/members/minwoo-choi/">Minwoo Choi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cvlab.dgist.ac.kr/members/kiljoon-han">Kiljoon Han</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://jae-hoon-jeong.github.io/">Jaehoon Jeong</a><sup>1</sup>,
+              </span>
+              </span><br> <!-- 여기서 줄바꿈 추가 -->
+              <span class="author-block">
+                <a href="https://zanedurante.github.io/">Zane Durante</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/view/mispl/members/professor">Sanghyun Park</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sunghoonim.github.io">Sunghoon Im</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>DGIST,</span>
+              <span class="author-block"><sup>2</sup>Stanford University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> 
+              <!-- Code Link. -->
+
+                <span class="link-block">
+                  <a href="https://github.com/Seung-Hun-Lee/CAVIS"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section-->
+
+  <section class="section">
+    <div class="container is-fluid">
+      <!-- <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3 has-text-centered">Demos</h2>
+            </div>
+        </div> -->
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h2 class="title is-3 has-text-centered">Key Mechanism</h2>
+            <video autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./videos/apt.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 30px;"></div>
+
+
+      <h2 class="title is-3 has-text-centered">Demo</h2>
+      <!-- Row 1 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video id="v_1" autoplay controls muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+            <source src="./videos/killbill.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video id="v_2" autoplay controls muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+            <source src="./videos/race.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video id="v_3" autoplay controls muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+            <source src="./videos/aespa.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video id="v_4" autoplay controls muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+            <source src="./videos/itzy1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <video id="v_5" autoplay controls muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+            <source src="./videos/billiard.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-half">
+          <video id="v_6" autoplay controls muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+            <source src="./videos/dog.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+
+    </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/motivation.png"
+           class="interpolation-image"
+           alt="Interpolate start reference image."/>
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In this paper, we introduce Latest Object Memory (LOM), a system for robustly tracking and continuously
+              updating the latest states of objects by explicitly modeling their presence across video frames. LOM
+              enables consistent tracking and accurate identity management across frames, enhancing both performance and
+              reliability through the video segmentation process. Building upon LOM, we present Latest Object Memory
+              Management (LOMM) for temporally consistent video instance segmentation, significantly improving long-term
+              instance tracking.
+              This enables consistent tracking and accurate identity management across frames, enhancing both
+              performance and reliability through the video segmentation process.
+              Moreover, we introduce Decoupled Object Association (DOA), a strategy that separately handles newly
+              appearing and already existing objects. By leveraging our memory system, DOA accurately assigns object
+              indices, improving matching accuracy and ensuring stable identity consistency, even in dynamic scenes
+              where objects frequently appear and disappear.
+              Extensive experiments and ablation studies demonstrate the superiority of our method over traditional
+              approaches, setting a new state-of-the-art in video instance segmentation. Notably, our LOMM achieves an
+              AP score of 54.0 on YouTube-VIS 2022, a dataset known for its challenging long videos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-nine-tenths">
+          <h2 class="title is-3">Method</h2>
+          <img src="./images/Method.png" class="interpolation-image" alt="Interpolate start reference image." />
+          <!-- <div class="content has-text-justified">
+            <p>
+              Comprison on OVIS, YTVIS19, and YTVIS21 datasets.
+            </p>
+              </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-nine-tenths">
+          <h2 class="title is-3">Performance</h2>
+          <img src="./images/main_table.png" class="interpolation-image" alt="Interpolate start reference image." />
+          <div class="content has-text-justified">
+            <p>
+              Comprison on YTVIS19, YTVIS21, and YTVIS22 datasets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <!--div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+  </div-->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Video sources include clips from Rosé & Bruno Mars - <i> APT</i>, and the film <i>Kill Bill (2003)</i>.
+            </p>
+
+            
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              We use the public template of <a href="https://github.com/nerfies/nerfies.github.io">Nertifies
+                Project</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
