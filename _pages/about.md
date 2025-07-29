@@ -31,7 +31,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 **<U>Seunghun Lee</U>**, Jiwan Seo, Minwoo Choi, Kiljoon Han, Jaehoon Jeong, Zane Durante, Ehsan Adeli†, Sang Hyun Park, Sunghoon Im†
 
-[**Project**](https://seung-hun-lee.github.io/projects/LOMM/) \| [**Code**](https://github.com/Seung-Hun-Lee/LOMM)
+[**Paper**](https://arxiv.org/abs/2507.19754) \| [**Project**](https://seung-hun-lee.github.io/projects/LOMM/) \| [**Code**](https://github.com/Seung-Hun-Lee/LOMM)
 
 </div>
 </div>
