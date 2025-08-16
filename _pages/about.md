@@ -24,6 +24,21 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 # 📝 Publications 
 ## 🚀 Recent Works
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/samdwich.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**SAMDWICH: Moment-aware Video-text Alignment for Referring Video Object Segmentation**
+
+**<U>Seunghun Lee*</U>**, Jiwan Seo\*, Jeonghoon Kim\*, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im†
+
+[**Paper**](https://arxiv.org/abs/2507.19754) \| [**Project**](https://seung-hun-lee.github.io/projects/SAMDWICH/) \| [**Code**](https://github.com/Seung-Hun-Lee/SAMDIWCH)
+
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/LOMM_ICCV_2025.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
