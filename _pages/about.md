@@ -25,7 +25,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 # 📝 Publications 
 ## 🚀 Recent Works
 
-<div class='paper-box'><div class='paper-box-image'><img src='images/samdwich.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/samdwich.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **SAMDWICH: Moment-aware Video-text Alignment for Referring Video Object Segmentation**
