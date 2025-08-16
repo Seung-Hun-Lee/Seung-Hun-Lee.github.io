@@ -32,7 +32,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 
 **<U>Seunghun Lee*</U>**, Jiwan Seo\*, Jeonghoon Kim\*, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im†
 
-[**Paper**](https://arxiv.org/abs/2507.19754) \| [**Project**](https://seung-hun-lee.github.io/projects/SAMDWICH/) \| [**Code**](https://github.com/Seung-Hun-Lee/SAMDIWCH)
+[**Paper**](https://arxiv.org/abs/2507.19754) \| [**Project**](https://seung-hun-lee.github.io/projects/SAMDWICH/) \| [**Code**](https://github.com/Seung-Hun-Lee/SAMDWICH)
 
 </div>
 </div>
