@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="SAMDWICH: Moment-aware Video-text Alignment for Referring Video Object Segmentation.">
+  <meta name="keywords" content="LOMM, VIS, Memory">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAMDWICH: Moment-aware Video-text Alignment for Referring Video Object Segmentation</title>
+  <style>
+    .rotated-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .video-wrapper {
+      width: 280px;
+      /* 고정된 너비 */
+      height: 200px;
+      /* 고정된 높이 */
+      margin: 10px;
+      /* 각 비디오 사이 여백 */
+      overflow: hidden;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      /* 비디오 너비 100% */
+      height: 100%;
+      /* 비디오 높이 100% */
+      object-fit: cover;
+      /* 비디오 비율 유지 및 오버플로우 처리 */
+    }
+
+    .custom-title {
+      font-size: 2.5rem;
+      /* 원하는 폰트 크기로 조정 */
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="icon" href="./images/cvlabLOGO.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://seung-hun-lee.github.io/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://seung-hun-lee.github.io/projects/CAVIS/">
+              CAVIS
+            </a>
+            <a class="navbar-item" href="https://seung-hun-lee.github.io/projects/LOMM/">
+              LOMM
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title"> <img src="images/SAMDWICH.png" alt="SAM sandwich" style="height:1em; vertical-align:-0.2em;"> SAMDWICH: Moment-aware Video-text Alignment for Referring Video Object Segmentation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://seung-hun-lee.github.io">Seunghun Lee</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://Seo-jiwan.github.io">Jiwan Seo</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://Seo-jiwan.github.io">Jeonghoon Kim</a><sup>1</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://cvlab.dgist.ac.kr/members/siwon-kim/">Siwon Kim</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cvlab.dgist.ac.kr/members/haeun-yun/">Haeun Yun</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://cvlab.dgist.ac.kr/members/hyogyeong-jeon/">Hyogyeong Jeon</a><sup>1</sup>,
+              </span>
+              </span><br> <!-- 여기서 줄바꿈 추가 -->
+
+              <span class="author-block">
+                <a href="https://wonhyeok-choi.github.io/">Wonhyeok Choi</a><sup>1</sup>,
+              </span>
+              
+              <span class="author-block">
+                <a href="https://jae-hoon-jeong.github.io/">Jaehoon Jeong</a><sup>1</sup>,
+              </span>
+
+              <span class="author-block">
+                <a href="https://zanedurante.github.io/">Zane Durante</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/view/mispl/members/professor">Sanghyun Park</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sunghoonim.github.io">Sunghoon Im</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>DGIST,</span>
+              <span class="author-block"><sup>2</sup>Stanford University</span>
+            </div>
+            <div class="publication-logos" style="margin-top: 10px; display: flex; justify-content: center; gap: 30px;">
+
+            </div>
+
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/html/2507.19754v1"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/html/2507.19754v1"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> 
+              <!-- Code Link. -->
+
+                <span class="link-block">
+                  <a href="https://github.com/Seung-Hun-Lee/CAVIS"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section-->
+
+  <section class="section">
+    <div class="container is-fluid">
+      <!-- <div class="columns is-centered has-text-centered">
+            <div class="column is-full">
+                <h2 class="title is-3 has-text-centered">Demos</h2>
+            </div>
+        </div> -->
+
+      <!-- <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h2 class="title is-3 has-text-centered">Key Mechanism</h2>
+            <video autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./videos/apt.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div style="height: 30px;"></div> -->
+
+
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-nine-tenths">
+              <h2 class="title is-3"> Demo </h2>
+              <video id="v_6" autoplay controls muted loop playsinline
+                style="width: 100%; height: 550px; object-fit: cover;">
+                <source src="./videos/Comparison_Video.mp4" type="video/mp4">
+              </video>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/motivation.png"
+           class="interpolation-image"
+           alt="Interpolate start reference image."/>
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <!-- Abstract. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Abstract</h2>
+              <div class="content has-text-justified">
+                <p style="margin-top: 10px; font-size: clamp(1rem, 2.5vw, 1.3rem);">
+                  Referring Video Object Segmentation (RVOS) aims to segment and track objects in videos based on
+                  natural
+                  language expressions, requiring precise alignment between visual content and textual queries.
+                  However, existing methods often suffer from semantic misalignment, largely due to indiscriminate frame
+                  sampling and supervision of all visible objects during training—regardless of their actual relevance
+                  to
+                  the expression.
+                  To address this, we introduce a moment-aware RVOS framework named SAMDWICH, along with a newly
+                  annotated
+                  dataset, <strong>MeViS-M</strong>, built upon the challenging MeViS benchmark.
+                  We manually annotate temporal moments indicating when each object is referred to by the expression,
+                  enabling semantically grounded supervision that strengthens video-text alignment.
+                  SAMDWICH leverages these aligned text-to-clip pairs to guide training, significantly enhancing
+                  referential
+                  understanding.
+                  Building upon this framework, we propose <strong>Moment-guided Dual-path Propagation (MDP)</strong>, a
+                  moment-aware propagation strategy that improves both object grounding and tracking by training on both
+                  relevant and irrelevant frames through a moment-centric memory mechanism.
+                  In addition, we introduce <strong>Object-level Selective Supervision (OSS)</strong>, an object-level
+                  filtering strategy that supervises only the objects temporally aligned with the expression in each
+                  training clip.
+                  This selective supervision reduces semantic noise and reinforces language-conditioned learning.
+                  Extensive
+                  experiments show that SAMDWICH achieves state-of-the-art performance on challenging MeViS benchmark,
+                  particularly excelling in complex scenarios involving diverse expressions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Abstract. -->
+
+          <!-- Paper video. -->
+          <!-- div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-nine-tenths">
+              <h2 class="title is-3">Motivation</h2>
+              <img src="./images/motivation.png" class="interpolation-image" alt="Interpolate start reference image." />
+              <div class="content has-text-justified">
+                <p style="margin-top: 10px; font-size: clamp(1rem, 2.5vw, 1.3rem);">
+                  <strong>Importance of moment-aware approach.</strong> (a) Most existing methods rely on random frame sampling, leading to unnatural learning dynamics where moels are forced to segment referred objects even in frames unrelated to the given text. (b) We propse a novel RVOS pipeline, SAMDWICH, that explicitly focuses on text-relevant moments to enable semantically grounded segmentation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-nine-tenths">
+              <h2 class="title is-3">Dataset & Analysis</h2>
+              <img src="./images/Dataset.png" class="interpolation-image" alt="Interpolate start reference image." />
+              <div class="content has-text-justified">
+                <p style="margin-top: 10px; font-size: clamp(1rem, 2.5vw, 1.3rem);">
+                  <strong>MeViS-M dataset and analysis on valid set.</strong> (a) A moment annotation example from MeViS-M, showing temporal spans labeled for each object referred to by the given expression. (b) Comparison of top-1 accuracy for key frame selection on VLMs. The consistently low accuracy across all models underscores the limitation of existing VLMs in moment retrieval and highlights the necessity of fine-grained moment annotations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-nine-tenths">
+              <h2 class="title is-3">Method</h2>
+              <img src="./images/Method.png" class="interpolation-image" alt="Interpolate start reference image." />
+              <div class="content has-text-justified">
+                <p style="margin-top: 10px; font-size: clamp(1rem, 2.5vw, 1.3rem);">
+                  <strong>Overall pipeline.</strong> In (a), \( \mathbf{F}_{\text{Adp}} \) of text-relevant frames are
+                  utilized for mask generation and memory update, while text-irrelevant frames employ \(
+                  \mathbf{F}_{\text{SAM}} \) for mask generation without contributing to the memory update. (b)
+                  illustrates
+                  how \( \mathbf{F}_{\text{Adp}} \) and \( \mathbf{F}_{\text{SAM}} \) are extracted from relevant and
+                  irrelevant frames, respectively, and how visual features are integrated into the prompt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content below is for MathJax -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      </script>
+      <!-- End -->
+
+
+
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-nine-tenths">
+              <h2 class="title is-3">Performance</h2>
+              <img src="./images/main_table.png" class="interpolation-image" alt="Interpolate start reference image." />
+              <div class="content has-text-justified">
+                <p style="margin-top: 10px; font-size: clamp(1rem, 2.5vw, 1.3rem);">
+                  <strong>Comparison on the MeViS dataset.</strong> Oracle uses ground-truth moments from MeViS-M at
+                  inference.
+                  <strong>†</strong> indicates methods that leverage Vision-Language Models (VLMs) for keyframe
+                  selection.
+                  Oracle + Ours† uses VLMs to extract keyframes from ground-truth moments.
+                  We adopt Chrono (Meinardus et al. 2024) and BLIP-2 (Li et al. 2023) as keyframe selectors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+
+        <!-- Analysis -->
+        <section class="section">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-nine-tenths">
+                <h2 class="title is-3">Further Analysis</h2>
+                <img src="./images/visualization.png" class="interpolation-image"
+                  alt="Interpolate start reference image." />
+                <div class="content has-text-justified">
+                  <p style="margin-top: 10px; font-size: clamp(0.7rem, 2.0vw, 1.0rem); text-align: center;">
+                    <strong>PCA-based feature maps and segmentation results of SAMWISE & SAMDWICH.</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <!--  -->
+
+
+
+
+
+
+
+
+
+          <!-- section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section -->
+
+
+          <footer class="footer">
+            <div class="container">
+              <!--div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+  </div-->
+              <div class="columns is-centered">
+                <div class="column is-8">
+                  <div class="content">
+                    <p>
+                      Video sources include clips from MeViS.
+                    </p>
+
+
+                    <p>
+                      This website is licensed under a <a rel="license"
+                        href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                      We use the public template of <a href="https://github.com/nerfies/nerfies.github.io">Nertifies
+                        Project</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+</body>
+
+</html>
