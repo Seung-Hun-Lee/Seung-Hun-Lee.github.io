@@ -21,6 +21,8 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 💡 I am currently **seeking job opportunities**, so please feel free to reach out if you are interested.
 
 # 🔥 News
+- *2025.09*: 🏆 Our team achieved 1st place in the 4th GroceryVision Challenge on Spatial Temporal Action Localization at ICCV 2025. 
+- *2025.09*: 🎉 Two papers accepted to ICCVw 2025. 
 - *2025.06*: 🎉 Two papers accepted to ICCV 2025. 
 - *2025.02*: 🎉 One paper accepted to CVPR 2025. 
 
@@ -89,6 +91,7 @@ Jihun Park\*, Jongmin Gim\*, Kyoungmin Lee\*, **<U>Seunghun Lee</U>**, Sunghoon 
 
 
 # 🎖 Honors and Awards
+- *2025.08*, 1st Place – 4th GroceryVision Challenge (Spatial-Temporal Action Localization), ICCV 2025
 - *2024.07*, DGIST Post-Graduate Research Abroad Awards, DGIST
 - *2024.02*, Participation prize, 30th HumanTech Paper Award, Samsung Electronics Co., Ltd.
 - *2022.08*, Outstanding Researcher Award, 2022 DGIST Student Conference, EECS.
