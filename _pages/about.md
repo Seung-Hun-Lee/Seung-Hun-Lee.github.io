@@ -91,7 +91,7 @@ Jihun Park\*, Jongmin Gim\*, Kyoungmin Lee\*, **<U>Seunghun Lee</U>**, Sunghoon 
 
 
 # 🎖 Honors and Awards
-- *2025.08*, 1st Place – 4th GroceryVision Challenge (Spatial-Temporal Action Localization), ICCV 2025
+- *2025.09*, 1st Place – 4th GroceryVision Challenge (Spatial-Temporal Action Localization), ICCV 2025
 - *2024.07*, DGIST Post-Graduate Research Abroad Awards, DGIST
 - *2024.02*, Participation prize, 30th HumanTech Paper Award, Samsung Electronics Co., Ltd.
 - *2022.08*, Outstanding Researcher Award, 2022 DGIST Student Conference, EECS.
