@@ -32,11 +32,11 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='images/samdwich.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**SAMDWICH: Moment-aware Video-text Alignment for Referring Video Object Segmentation**
+**Temporal Grounding as A Learning Signal for Referring Video Object Segmentation**
 
-**<U>Seunghun Lee*</U>**, Jiwan Seo\*, Jeonghoon Kim\*, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im†
+**<U>Seunghun Lee*</U>**, Jiwan Seo\*, Jeonghoon Kim\*, Sungho Moon\*, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im†
 
-[**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/SAMDWICH/) \| [**Code**](https://github.com/Seung-Hun-Lee/SAMDWICH)
+[**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/TGL/)
 
 </div>
 </div>
