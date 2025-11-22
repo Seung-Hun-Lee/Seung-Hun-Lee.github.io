@@ -21,6 +21,7 @@ I am **Seunghun Lee**, a Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Sc
 💡 I am currently **seeking job opportunities**, so please feel free to reach out if you are interested.
 
 # 🔥 News
+- *2025.11*: I join LG AI Research as a research intern.
 - *2025.09*: 🏆 Our team achieved 1st place in the 4th GroceryVision Challenge on Spatial Temporal Action Localization at ICCV 2025. 
 - *2025.09*: 🎉 Two papers accepted to ICCVw 2025. 
 - *2025.06*: 🎉 Two papers accepted to ICCV 2025. 
