@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Seunghun Lee"
-description              : "Ph.D. Student, researching on domain adaptation and video understanding"
+description              : "AI Engineer at Huawei Singapore, working on visual and multimodal systems"
 repository               : "Seung-Hun-Lee/seunghunlee.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,10 +22,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Seunghun Lee"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "DGIST"
-  location         : "Daegu, Korea"
-  employer         :
+  avatar           : "images/seunghun-photo.jpg"
+  bio              : "AI Engineer, Huawei Singapore"
+  location         : "Singapore"
+  employer         : "Huawei Singapore"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=cWYig8YAAAAJ"
   email            : "lsh5688@dgist.ac.kr"
@@ -57,7 +57,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  cv               : "/Seunghun_Lee_CV_260202.pdf"
+  cv               : "/Seunghun_Lee_CV_260716.pdf"
 
 
 # Reading Files
@@ -75,6 +75,7 @@ exclude:
   - .jekyll-assets-cache
   - .sass-cache
   - .github
+  - AGENTS.md
   - CHANGELOG
   - Capfile
   - Gemfile
