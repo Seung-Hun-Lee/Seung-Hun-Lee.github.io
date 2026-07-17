@@ -40,6 +40,18 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+.page--centered {
+    @include breakpoint($large) {
+        float: none;
+        width: 100%;
+        max-width: 68rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 .home-hero {
     position: relative;
     display: grid;
@@ -589,6 +601,8 @@
     .home-hero {
         width: 20rem;
         max-width: calc(100vw - 4rem);
+        margin-right: auto;
+        margin-left: auto;
         padding: 1.35rem;
         grid-template-columns: minmax(0, 1fr);
         gap: 1.25rem;
@@ -652,6 +666,8 @@
     .home-section {
         width: 20rem;
         max-width: calc(100vw - 4rem);
+        margin-right: auto;
+        margin-left: auto;
         box-sizing: border-box;
     }
 
