@@ -289,7 +289,7 @@ redirect_from:
   <div class="activity-group">
     <h3>Advanced Studies</h3>
     <div class="timeline-list activity-timeline activity-timeline--single">
-      <div class="timeline-item"><time>2023</time><div class="timeline-item__body"><div><strong>ICVSS</strong></div></div></div>
+      <div class="timeline-item"><time>2023</time><div class="timeline-item__body"><div><strong>International Computer Vision Summer School (ICVSS)</strong></div></div></div>
     </div>
   </div>
 </section>
