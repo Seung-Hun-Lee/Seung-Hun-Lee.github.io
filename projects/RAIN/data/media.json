@@ -1,0 +1,648 @@
+{
+  "hero": {
+    "video": "assets/videos/hero.mp4",
+    "poster": "assets/posters/hero.webp",
+    "duration": 46.2
+  },
+  "chapters": [
+    {
+      "name": "Real-world",
+      "start": 0,
+      "end": 9.0
+    },
+    {
+      "name": "Adapt",
+      "start": 9.0,
+      "end": 21.4
+    },
+    {
+      "name": "Compose",
+      "start": 21.4,
+      "end": 33.8
+    },
+    {
+      "name": "Decompose",
+      "start": 33.8,
+      "end": 46.199999999999996
+    }
+  ],
+  "cases": [
+    {
+      "task_id": "Adapt_002",
+      "suite": "Adapt",
+      "instruction": "Put the white mug on the right plate",
+      "sources": [
+        {
+          "video": "assets/videos/cases/Adapt_002_0.mp4",
+          "poster": "assets/posters/Adapt_002_0.webp",
+          "duration": 9.0,
+          "caption": "Put the white mug on the left plate and put the yellow and white mug on the right plate"
+        },
+        {
+          "video": "assets/videos/cases/Adapt_002_1.mp4",
+          "poster": "assets/posters/Adapt_002_1.webp",
+          "duration": 9.0,
+          "caption": "Put the white mug on the plate and put the chocolate pudding to the right of the plate"
+        }
+      ],
+      "target": {
+        "video": "assets/videos/cases/Adapt_002_2.mp4",
+        "poster": "assets/posters/Adapt_002_2.webp",
+        "duration": 3.4,
+        "caption": "Places the white mug on the newly requested right plate."
+      }
+    },
+    {
+      "task_id": "Compose_020",
+      "suite": "Compose",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+      "sources": [
+        {
+          "video": "assets/videos/cases/Compose_020_0.mp4",
+          "poster": "assets/posters/Compose_020_0.webp",
+          "duration": 9.0,
+          "caption": "Put the bowl on the stove"
+        },
+        {
+          "video": "assets/videos/cases/Compose_020_1.mp4",
+          "poster": "assets/posters/Compose_020_1.webp",
+          "duration": 9.0,
+          "caption": "Turn on the stove"
+        },
+        {
+          "video": "assets/videos/cases/Compose_020_2.mp4",
+          "poster": "assets/posters/Compose_020_2.webp",
+          "duration": 9.0,
+          "caption": "Open the top drawer and put the bowl inside"
+        }
+      ],
+      "target": {
+        "video": "assets/videos/cases/Compose_020_3.mp4",
+        "poster": "assets/posters/Compose_020_3.webp",
+        "duration": 9.0,
+        "caption": "Places the cheese, turns on the stove, then opens the top drawer."
+      }
+    },
+    {
+      "task_id": "Decompose_014",
+      "suite": "Decompose",
+      "instruction": "Close the bottom drawer of the cabinet",
+      "sources": [
+        {
+          "video": "assets/videos/cases/Decompose_014_0.mp4",
+          "poster": "assets/posters/Decompose_014_0.webp",
+          "duration": 9.0,
+          "caption": "put the black bowl in the bottom drawer of the cabinet and close it"
+        }
+      ],
+      "target": {
+        "video": "assets/videos/cases/Decompose_014_1.mp4",
+        "poster": "assets/posters/Decompose_014_1.webp",
+        "duration": 9.0,
+        "caption": "Closes the empty bottom drawer in one continuous push; the bowl remains outside."
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "task_id": "Adapt_001",
+      "suite": "Adapt",
+      "instruction": "Put the white mug on the middle plate",
+      "video": "assets/videos/gallery/Adapt_001.mp4",
+      "poster": "assets/posters/Adapt_001.webp",
+      "duration": 3.6,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_002",
+      "suite": "Adapt",
+      "instruction": "Put the white mug on the right plate",
+      "video": "assets/videos/gallery/Adapt_002.mp4",
+      "poster": "assets/posters/Adapt_002.webp",
+      "duration": 3.4,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_003",
+      "suite": "Adapt",
+      "instruction": "Put the black bowl in the middle drawer of the white cabinet",
+      "video": "assets/videos/gallery/Adapt_003.mp4",
+      "poster": "assets/posters/Adapt_003.webp",
+      "duration": 4.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_004",
+      "suite": "Adapt",
+      "instruction": "Close the top drawer of the white cabinet",
+      "video": "assets/videos/gallery/Adapt_004.mp4",
+      "poster": "assets/posters/Adapt_004.webp",
+      "duration": 2.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_005",
+      "suite": "Adapt",
+      "instruction": "Close the middle drawer of the white cabinet",
+      "video": "assets/videos/gallery/Adapt_005.mp4",
+      "poster": "assets/posters/Adapt_005.webp",
+      "duration": 8.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_006",
+      "suite": "Adapt",
+      "instruction": "Pick up the wine bottle at the table center and place it on the plate",
+      "video": "assets/videos/gallery/Adapt_006.mp4",
+      "poster": "assets/posters/Adapt_006.webp",
+      "duration": 3.4,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_007",
+      "suite": "Adapt",
+      "instruction": "Put the plate on the top of the wooden cabinet",
+      "video": "assets/videos/gallery/Adapt_007.mp4",
+      "poster": "assets/posters/Adapt_007.webp",
+      "duration": 3.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_008",
+      "suite": "Adapt",
+      "instruction": "Put the cream cheese in the top drawer of the wooden cabinet",
+      "video": "assets/videos/gallery/Adapt_008.mp4",
+      "poster": "assets/posters/Adapt_008.webp",
+      "duration": 4.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_009",
+      "suite": "Adapt",
+      "instruction": "Put the yellow and white mug in the right compartment of the caddy",
+      "video": "assets/videos/gallery/Adapt_009.mp4",
+      "poster": "assets/posters/Adapt_009.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_010",
+      "suite": "Adapt",
+      "instruction": "Pick the alphabet soup and place it in the basket",
+      "video": "assets/videos/gallery/Adapt_010.mp4",
+      "poster": "assets/posters/Adapt_010.webp",
+      "duration": 3.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_011",
+      "suite": "Adapt",
+      "instruction": "Pick the orange juice and place it in the basket",
+      "video": "assets/videos/gallery/Adapt_011.mp4",
+      "poster": "assets/posters/Adapt_011.webp",
+      "duration": 8.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_012",
+      "suite": "Adapt",
+      "instruction": "Pick the tomato sauce and place it in the basket",
+      "video": "assets/videos/gallery/Adapt_012.mp4",
+      "poster": "assets/posters/Adapt_012.webp",
+      "duration": 3.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_013",
+      "suite": "Adapt",
+      "instruction": "Pick the milk and place it in the basket",
+      "video": "assets/videos/gallery/Adapt_013.mp4",
+      "poster": "assets/posters/Adapt_013.webp",
+      "duration": 5.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_014",
+      "suite": "Adapt",
+      "instruction": "Put the popcorn on top of the short fridge",
+      "video": "assets/videos/gallery/Adapt_014.mp4",
+      "poster": "assets/posters/Adapt_014.webp",
+      "duration": 4.6,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_015",
+      "suite": "Adapt",
+      "instruction": "Put the yellow book on top of the two-layer wooden shelf",
+      "video": "assets/videos/gallery/Adapt_015.mp4",
+      "poster": "assets/posters/Adapt_015.webp",
+      "duration": 4.4,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_016",
+      "suite": "Adapt",
+      "instruction": "Pick up the black bowl at the table center and place it on the dining-set mat",
+      "video": "assets/videos/gallery/Adapt_016.mp4",
+      "poster": "assets/posters/Adapt_016.webp",
+      "duration": 3.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_017",
+      "suite": "Adapt",
+      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer",
+      "video": "assets/videos/gallery/Adapt_017.mp4",
+      "poster": "assets/posters/Adapt_017.webp",
+      "duration": 5.2,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_018",
+      "suite": "Adapt",
+      "instruction": "Open the top drawer of the wooden cabinet",
+      "video": "assets/videos/gallery/Adapt_018.mp4",
+      "poster": "assets/posters/Adapt_018.webp",
+      "duration": 2.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_019",
+      "suite": "Adapt",
+      "instruction": "Pick up the black bowl and place it in the wooden tray",
+      "video": "assets/videos/gallery/Adapt_019.mp4",
+      "poster": "assets/posters/Adapt_019.webp",
+      "duration": 7.6,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Adapt_020",
+      "suite": "Adapt",
+      "instruction": "Put the ketchup on the rack",
+      "video": "assets/videos/gallery/Adapt_020.mp4",
+      "poster": "assets/posters/Adapt_020.webp",
+      "duration": 5.2,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_001",
+      "suite": "Compose",
+      "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
+      "video": "assets/videos/gallery/Compose_001.mp4",
+      "poster": "assets/posters/Compose_001.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_002",
+      "suite": "Compose",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove",
+      "video": "assets/videos/gallery/Compose_002.mp4",
+      "poster": "assets/posters/Compose_002.webp",
+      "duration": 8.4,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_003",
+      "suite": "Compose",
+      "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove",
+      "video": "assets/videos/gallery/Compose_003.mp4",
+      "poster": "assets/posters/Compose_003.webp",
+      "duration": 8.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_004",
+      "suite": "Compose",
+      "instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
+      "video": "assets/videos/gallery/Compose_004.mp4",
+      "poster": "assets/posters/Compose_004.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_005",
+      "suite": "Compose",
+      "instruction": "Put the moka pot on the stove, then close the microwave door",
+      "video": "assets/videos/gallery/Compose_005.mp4",
+      "poster": "assets/posters/Compose_005.webp",
+      "duration": 8.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_006",
+      "suite": "Compose",
+      "instruction": "Put the butter in the basket, and then put the tomato sauce in the basket",
+      "video": "assets/videos/gallery/Compose_006.mp4",
+      "poster": "assets/posters/Compose_006.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_007",
+      "suite": "Compose",
+      "instruction": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
+      "video": "assets/videos/gallery/Compose_007.mp4",
+      "poster": "assets/posters/Compose_007.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_008",
+      "suite": "Compose",
+      "instruction": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
+      "video": "assets/videos/gallery/Compose_008.mp4",
+      "poster": "assets/posters/Compose_008.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_009",
+      "suite": "Compose",
+      "instruction": "Put the milk in the basket, and then put the cream cheese box in the basket",
+      "video": "assets/videos/gallery/Compose_009.mp4",
+      "poster": "assets/posters/Compose_009.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_010",
+      "suite": "Compose",
+      "instruction": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
+      "video": "assets/videos/gallery/Compose_010.mp4",
+      "poster": "assets/posters/Compose_010.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_011",
+      "suite": "Compose",
+      "instruction": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
+      "video": "assets/videos/gallery/Compose_011.mp4",
+      "poster": "assets/posters/Compose_011.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_012",
+      "suite": "Compose",
+      "instruction": "Put the tomato sauce in the basket, then put the white mug on the plate",
+      "video": "assets/videos/gallery/Compose_012.mp4",
+      "poster": "assets/posters/Compose_012.webp",
+      "duration": 8.6,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_013",
+      "suite": "Compose",
+      "instruction": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
+      "video": "assets/videos/gallery/Compose_013.mp4",
+      "poster": "assets/posters/Compose_013.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_014",
+      "suite": "Compose",
+      "instruction": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
+      "video": "assets/videos/gallery/Compose_014.mp4",
+      "poster": "assets/posters/Compose_014.webp",
+      "duration": 8.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_015",
+      "suite": "Compose",
+      "instruction": "Pick the butter and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+      "video": "assets/videos/gallery/Compose_015.mp4",
+      "poster": "assets/posters/Compose_015.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_016",
+      "suite": "Compose",
+      "instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
+      "video": "assets/videos/gallery/Compose_016.mp4",
+      "poster": "assets/posters/Compose_016.webp",
+      "duration": 7.4,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_017",
+      "suite": "Compose",
+      "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
+      "video": "assets/videos/gallery/Compose_017.mp4",
+      "poster": "assets/posters/Compose_017.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_018",
+      "suite": "Compose",
+      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+      "video": "assets/videos/gallery/Compose_018.mp4",
+      "poster": "assets/posters/Compose_018.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_019",
+      "suite": "Compose",
+      "instruction": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
+      "video": "assets/videos/gallery/Compose_019.mp4",
+      "poster": "assets/posters/Compose_019.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Compose_020",
+      "suite": "Compose",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
+      "video": "assets/videos/gallery/Compose_020.mp4",
+      "poster": "assets/posters/Compose_020.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_001",
+      "suite": "Decompose",
+      "instruction": "Put the white mug on the left plate",
+      "video": "assets/videos/gallery/Decompose_001.mp4",
+      "poster": "assets/posters/Decompose_001.webp",
+      "duration": 3.2,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_002",
+      "suite": "Decompose",
+      "instruction": "Put the yellow and white mug on the right plate",
+      "video": "assets/videos/gallery/Decompose_002.mp4",
+      "poster": "assets/posters/Decompose_002.webp",
+      "duration": 3.2,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_003",
+      "suite": "Decompose",
+      "instruction": "Put the white mug on the plate",
+      "video": "assets/videos/gallery/Decompose_003.mp4",
+      "poster": "assets/posters/Decompose_003.webp",
+      "duration": 4.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_004",
+      "suite": "Decompose",
+      "instruction": "Put the chocolate pudding to the right of the plate",
+      "video": "assets/videos/gallery/Decompose_004.mp4",
+      "poster": "assets/posters/Decompose_004.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_005",
+      "suite": "Decompose",
+      "instruction": "Put the yellow and white mug in the microwave",
+      "video": "assets/videos/gallery/Decompose_005.mp4",
+      "poster": "assets/posters/Decompose_005.webp",
+      "duration": 5.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_006",
+      "suite": "Decompose",
+      "instruction": "Close the microwave",
+      "video": "assets/videos/gallery/Decompose_006.mp4",
+      "poster": "assets/posters/Decompose_006.webp",
+      "duration": 4.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_007",
+      "suite": "Decompose",
+      "instruction": "Put the moka pot on the stove",
+      "video": "assets/videos/gallery/Decompose_007.mp4",
+      "poster": "assets/posters/Decompose_007.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_008",
+      "suite": "Decompose",
+      "instruction": "Put the alphabet soup in the basket",
+      "video": "assets/videos/gallery/Decompose_008.mp4",
+      "poster": "assets/posters/Decompose_008.webp",
+      "duration": 3.6,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_009",
+      "suite": "Decompose",
+      "instruction": "Put the cream cheese box in the basket",
+      "video": "assets/videos/gallery/Decompose_009.mp4",
+      "poster": "assets/posters/Decompose_009.webp",
+      "duration": 2.8,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_010",
+      "suite": "Decompose",
+      "instruction": "Put the alphabet soup in the basket",
+      "video": "assets/videos/gallery/Decompose_010.mp4",
+      "poster": "assets/posters/Decompose_010.webp",
+      "duration": 4.2,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_011",
+      "suite": "Decompose",
+      "instruction": "Put the tomato sauce in the basket",
+      "video": "assets/videos/gallery/Decompose_011.mp4",
+      "poster": "assets/posters/Decompose_011.webp",
+      "duration": 3.2,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_012",
+      "suite": "Decompose",
+      "instruction": "Put the cream cheese box in the basket",
+      "video": "assets/videos/gallery/Decompose_012.mp4",
+      "poster": "assets/posters/Decompose_012.webp",
+      "duration": 4.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_013",
+      "suite": "Decompose",
+      "instruction": "Put the butter in the basket",
+      "video": "assets/videos/gallery/Decompose_013.mp4",
+      "poster": "assets/posters/Decompose_013.webp",
+      "duration": 3.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_014",
+      "suite": "Decompose",
+      "instruction": "Close the bottom drawer of the cabinet",
+      "video": "assets/videos/gallery/Decompose_014.mp4",
+      "poster": "assets/posters/Decompose_014.webp",
+      "duration": 9.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_015",
+      "suite": "Decompose",
+      "instruction": "Turn on the stove",
+      "video": "assets/videos/gallery/Decompose_015.mp4",
+      "poster": "assets/posters/Decompose_015.webp",
+      "duration": 2.4,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_016",
+      "suite": "Decompose",
+      "instruction": "Put the black bowl in the bottom drawer of the cabinet",
+      "video": "assets/videos/gallery/Decompose_016.mp4",
+      "poster": "assets/posters/Decompose_016.webp",
+      "duration": 5.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_017",
+      "suite": "Decompose",
+      "instruction": "Put the left moka pot on the stove",
+      "video": "assets/videos/gallery/Decompose_017.mp4",
+      "poster": "assets/posters/Decompose_017.webp",
+      "duration": 5.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_018",
+      "suite": "Decompose",
+      "instruction": "Put the right moka pot on the stove",
+      "video": "assets/videos/gallery/Decompose_018.mp4",
+      "poster": "assets/posters/Decompose_018.webp",
+      "duration": 8.2,
+      "selection_note": "Selected successful RAIN ablation rollout (without consistency loss), as in the reviewed supplementary video."
+    },
+    {
+      "task_id": "Decompose_019",
+      "suite": "Decompose",
+      "instruction": "Open the top drawer of the cabinet",
+      "video": "assets/videos/gallery/Decompose_019.mp4",
+      "poster": "assets/posters/Decompose_019.webp",
+      "duration": 2.0,
+      "selection_note": "Selected successful RAIN rollout."
+    },
+    {
+      "task_id": "Decompose_020",
+      "suite": "Decompose",
+      "instruction": "Put the black bowl inside the top drawer of the cabinet",
+      "video": "assets/videos/gallery/Decompose_020.mp4",
+      "poster": "assets/posters/Decompose_020.webp",
+      "duration": 3.4,
+      "selection_note": "Selected successful RAIN rollout."
+    }
+  ]
+}

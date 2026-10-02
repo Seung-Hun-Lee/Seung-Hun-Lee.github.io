@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAIN: Robotic Task Generalization with Region-Aware Interaction Networks</title>
+  <meta name="description" content="RAIN: Robotic Task Generalization with Region-Aware Interaction Networks. Explore LIBERO-Analogy, region-conditioned robot interaction, and real-world generalization.">
+  <meta property="og:title" content="RAIN: Robotic Task Generalization with Region-Aware Interaction Networks">
+  <meta property="og:description" content="Learn interactions. Generalize to new tasks. RAIN and the LIBERO-Analogy benchmark.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seung-hun-lee.github.io/projects/RAIN/">
+  <meta property="og:image" content="https://seung-hun-lee.github.io/projects/RAIN/assets/posters/hero.webp">
+  <meta name="theme-color" content="#7254c8">
+  <link rel="canonical" href="https://seung-hun-lee.github.io/projects/RAIN/">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css?v=57cb040bf1c1">
+  <script defer src="assets/main.js?v=42bdf0fda496"></script>
+  <script defer src="assets/pipeline.js?v=67abc5cd9b75"></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main id="content"><section class="hero"><div class="wrap">
+      <h1><span class="rain-title">RAIN:</span> Robotic Task Generalization<br>with Region-Aware Interaction Networks</h1>
+      <div class="authors" aria-label="Authors"><a href="https://seung-hun-lee.github.io/" target="_blank" rel="noopener noreferrer">Seunghun Lee<sup>1,2,*</sup></a><a href="https://underthelights.github.io/" target="_blank" rel="noopener noreferrer">Kyuhwan Shim<sup>1,3,*</sup></a><a href="https://0gonge.github.io/" target="_blank" rel="noopener noreferrer">Yeogyeong Song<sup>1,*</sup></a><a href="https://scholar.google.com/citations?user=Y6DTyj4AAAAJ&amp;hl=ko" target="_blank" rel="noopener noreferrer">Seung Hwan Kim<sup>1</sup></a><a href="https://openreview.net/profile?id=%7ESihaeng_Lee1" target="_blank" rel="noopener noreferrer">Sihaeng Lee<sup>1</sup></a><a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html" target="_blank" rel="noopener noreferrer">Byoung-Tak Zhang<sup>3</sup></a><a href="https://sunghoonim.github.io/professor/index.html" target="_blank" rel="noopener noreferrer">Sunghoon Im<sup>4,†</sup></a><a href="https://scholar.google.com/citations?user=Ab2wTlkAAAAJ&amp;hl=ko" target="_blank" rel="noopener noreferrer">Gunhee Lee<sup>1,†</sup></a></div>
+      <div class="affiliations"><span><sup>1</sup>LG AI Research</span><span><sup>2</sup>Huawei Technologies Ltd.</span><span><sup>3</sup>Seoul National University</span><span><sup>4</sup>KAIST</span></div>
+      <p class="author-notes"><span><sup>*</sup>Equal contribution. Work done during internships at LG AI Research.</span><span><sup>†</sup>Corresponding authors.</span></p>
+      <div class="publication-links">
+        <button class="external-link button is-normal is-rounded is-dark" type="button" disabled aria-label="Paper — coming soon" title="Paper link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h9l5 5v15H5V2zm9 2v5h5M8 12h8M8 16h8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Paper</span></button>
+        <a class="external-link button is-normal is-rounded is-dark" href="https://github.com/Seung-Hun-Lee/RAIN" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.3 11.3 0 0 0-3.6 22c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.5-4.1-1.5-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2c-.1-.3-.5-1.6.2-3.3 0 0 1-.3 3.4 1.2a11.6 11.6 0 0 1 6.2 0C17.9 3.8 19 4.1 19 4.1c.7 1.7.3 3 .2 3.3a4.7 4.7 0 0 1 1.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.4c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .8z"/></svg><span>Code</span></a>
+      </div>
+      <div class="hero-video"><video id="hero-video" controls autoplay muted loop playsinline preload="metadata" poster="assets/posters/hero.webp" aria-label="Real-world experiments followed by LIBERO-Analogy comparisons">
+        <source src="assets/videos/hero.mp4?v=9cc2e2021d2e" type="video/mp4">Your browser does not support embedded video. <a href="assets/videos/hero.mp4?v=9cc2e2021d2e">Download the video.</a>
+      </video></div>
+      <p class="hero-caption">When the goal changes, existing policies can fall back on familiar demonstration trajectories
+        instead of following the semantics of the current observation and instruction.
+        We introduce <strong>RAIN, Region-Aware Interaction Networks</strong>, to generalize robotic tasks through reusable, target-region-conditioned interactions.</p>
+    </div></section>
+    <section class="section" id="benchmark"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">The benchmark</p><h2>LIBERO-Analogy</h2>
+        <p>Train on LIBERO, then evaluate on LIBERO-Analogy: 60 tasks that are not directly seen during training, but can be solved by analogy to learned interactions. The benchmark tests robotic task generalization through <span class="suite-label" data-suite="Adapt">Adapt</span>, <span class="suite-label" data-suite="Compose">Compose</span>, and <span class="suite-label" data-suite="Decompose">Decompose</span>.</p>
+        <a class="button explore-button" href="gallery.html">Explore all 60 tasks <span aria-hidden="true">↗</span></a></div>
+      <article class="case" data-suite="Adapt">
+          <div class="case-top"><h3 class="suite-name">Adapt</h3><p class="suite-subtitle">Changed layouts and goals</p></div>
+          <div class="case-flow">
+            <div class="source-set"><p class="group-label"><span class="set-badge">TRAINING SET</span><span>Related tasks from LIBERO</span></p>
+              <div class="source-grid count-2" style="--count:2"><figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Adapt_002_0.webp"
+        data-src="assets/videos/cases/Adapt_002_0.mp4" data-autoplay aria-label="Put the white mug on the left plate and put the yellow and white mug on the right plate"></video></div><figcaption>Put the white mug on the left plate and put the yellow and white mug on the right plate</figcaption></figure><figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Adapt_002_1.webp"
+        data-src="assets/videos/cases/Adapt_002_1.mp4" data-autoplay aria-label="Put the white mug on the plate and put the chocolate pudding to the right of the plate"></video></div><figcaption>Put the white mug on the plate and put the chocolate pudding to the right of the plate</figcaption></figure></div></div>
+            <div class="case-arrow" aria-hidden="true">→</div>
+            <div class="target-set"><p class="group-label"><span class="set-badge">EVALUATION</span><span>LIBERO-Analogy · Adapt</span></p>
+              <figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Adapt_002_2.webp"
+        data-src="assets/videos/cases/Adapt_002_2.mp4" data-autoplay aria-label="Adapt example: Put the white mug on the right plate"></video></div>
+              <figcaption>Put the white mug on the right plate</figcaption></figure></div>
+          </div>
+          <p class="case-footnote">Adapt learned interactions to changes in scene layout, object arrangement, and task goals.</p>
+        </article>
+<article class="case" data-suite="Compose">
+          <div class="case-top"><h3 class="suite-name">Compose</h3><p class="suite-subtitle">Combine skills into longer tasks</p></div>
+          <div class="case-flow">
+            <div class="source-set"><p class="group-label"><span class="set-badge">TRAINING SET</span><span>Related tasks from LIBERO</span></p>
+              <div class="source-grid count-3" style="--count:3"><figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Compose_020_0.webp"
+        data-src="assets/videos/cases/Compose_020_0.mp4" data-autoplay aria-label="Put the bowl on the stove"></video></div><figcaption>Put the bowl on the stove</figcaption></figure><figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Compose_020_1.webp"
+        data-src="assets/videos/cases/Compose_020_1.mp4" data-autoplay aria-label="Turn on the stove"></video></div><figcaption>Turn on the stove</figcaption></figure><figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Compose_020_2.webp"
+        data-src="assets/videos/cases/Compose_020_2.mp4" data-autoplay aria-label="Open the top drawer and put the bowl inside"></video></div><figcaption>Open the top drawer and put the bowl inside</figcaption></figure></div></div>
+            <div class="case-arrow" aria-hidden="true">→</div>
+            <div class="target-set"><p class="group-label"><span class="set-badge">EVALUATION</span><span>LIBERO-Analogy · Compose</span></p>
+              <figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Compose_020_3.webp"
+        data-src="assets/videos/cases/Compose_020_3.mp4" data-autoplay aria-label="Compose example: Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet."></video></div>
+              <figcaption>Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.</figcaption></figure></div>
+          </div>
+          <p class="case-footnote">Combine skills learned from LIBERO into new long-horizon tasks.</p>
+        </article>
+<article class="case" data-suite="Decompose">
+          <div class="case-top"><h3 class="suite-name">Decompose</h3><p class="suite-subtitle">Execute only the requested part</p></div>
+          <div class="case-flow">
+            <div class="source-set"><p class="group-label"><span class="set-badge">TRAINING SET</span><span>Related tasks from LIBERO</span></p>
+              <div class="source-grid count-1" style="--count:1"><figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Decompose_014_0.webp"
+        data-src="assets/videos/cases/Decompose_014_0.mp4" data-autoplay aria-label="put the black bowl in the bottom drawer of the cabinet and close it"></video></div><figcaption>put the black bowl in the bottom drawer of the cabinet and close it</figcaption></figure></div></div>
+            <div class="case-arrow" aria-hidden="true">→</div>
+            <div class="target-set"><p class="group-label"><span class="set-badge">EVALUATION</span><span>LIBERO-Analogy · Decompose</span></p>
+              <figure><div class="case-screen"><video controls autoplay muted playsinline loop preload="none" poster="assets/posters/Decompose_014_1.webp"
+        data-src="assets/videos/cases/Decompose_014_1.mp4" data-autoplay aria-label="Decompose example: Close the bottom drawer of the cabinet"></video></div>
+              <figcaption>Close the bottom drawer of the cabinet</figcaption></figure></div>
+          </div>
+          <p class="case-footnote">Perform the requested part of a learned long-horizon task, leaving the rest of the sequence out.</p>
+        </article>
+    </div></section>
+    <section class="section soft-section" id="pipeline"><div class="wrap pipeline-wrap">
+  <div class="section-heading"><p class="eyebrow">From instruction to interaction</p>
+    <h2>Robotic Task as Sequence of Interactions</h2>
+    <p>A VLM plans the subtasks. SAM3 segments and tracks each target. RAIN acts on the region and decides when to move on.</p>
+  </div>
+  <div class="pipeline-demo" id="pipeline-board" data-phase="observe" data-step="0">
+    <ol class="pipeline-stages" aria-label="Pipeline stages">
+      <li data-stage="plan"><span>01</span> Plan the interactions</li>
+      <li data-stage="locate"><span>02</span> Find the target</li>
+      <li data-stage="act"><span>03</span> Act &amp; transition</li>
+    </ol>
+    <svg class="pipeline-connectors" id="pipeline-connectors" aria-hidden="true">
+      <defs>
+        <marker id="arrow-violet" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7Z" fill="#9071ca"/></marker>
+        <marker id="arrow-target" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7Z" fill="var(--target-color)"/></marker>
+        <marker id="arrow-green" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7Z" fill="#34886c"/></marker>
+      </defs><g id="connector-lines"></g>
+    </svg>
+    <div class="planning-row">
+      <div class="task-description reveal-node" id="description-node"><span class="field-label">Task description</span>
+        <p class="description-text"><span class="description-line">Pick up the <span class="potato-color">potato</span> and</span> <span class="description-line">place it on the <span class="plate-color">rightmost plate</span>.</span></p>
+      </div>
+      <div class="planning-prompt reveal-node" id="prompt-node"><span class="field-label">Planning Prompt</span>
+        <p class="prompt-text">Split the task into ordered interactions. For each, specify the <strong>action type</strong> and <strong>target object or region</strong>.</p>
+      </div>
+      <div class="vlm-node reveal-node" id="vlm-node">VLM</div>
+    </div>
+    <div class="pipeline-scene">
+      <aside class="sequence reveal-node" id="subtask-sequence" aria-label="Subtask sequence">
+        <h3>Subtask sequence</h3>
+        <ol class="sequence-items">
+          <li class="sequence-item" id="subtask-grasp" data-step="0"><span class="sequence-number">01</span>
+            <p>Action type: <strong>Grasp</strong></p><p>Target: <strong class="potato-color">potato</strong></p>
+            <span class="sequence-state">Planned</span></li>
+          <li class="sequence-item" id="subtask-release" data-step="1"><span class="sequence-number">02</span>
+            <p>Action type: <strong>Release</strong></p><p>Target: <strong class="plate-color">rightmost plate</strong></p>
+            <span class="sequence-state">Planned</span></li>
+        </ol>
+      </aside>
+      <div class="tracking-column">
+      <div class="sam-node reveal-node" id="sam-node">SAM3</div>
+      <figure class="observation" id="observation-node">
+        <div class="observation-frame"><video id="pipeline-video" muted playsinline preload="none" data-src="assets/videos/potato.mp4" poster="assets/posters/potato.webp" aria-label="Recorded RAIN potato-to-plate execution"></video>
+          <svg class="mask-overlay" viewBox="0 0 720 540" aria-label="SAM3 predicted target mask">
+            <defs><marker id="region-arrowhead" markerWidth="21" markerHeight="21" refX="17" refY="10.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L20,10.5 L1,20 L6,10.5 Z" fill="var(--target-color)" stroke="white" stroke-width="1.5"/></marker></defs>
+            <path id="tracked-mask" fill-rule="evenodd"/>
+            <g id="target-callout" aria-hidden="true" visibility="hidden">
+              <path id="target-pointer-halo"/><path id="target-pointer" marker-end="url(#region-arrowhead)"/>
+              <g id="target-region-label"><rect width="211" height="47" rx="10"/><text x="105.5" y="32" text-anchor="middle">Target region</text></g>
+            </g>
+          </svg>
+          <span class="observation-tag" id="observation-status">Initial observation</span>
+        </div>
+        <figcaption id="overlay-label">Robot observation</figcaption>
+      </figure>
+      </div>
+      <div class="rain-node reveal-node" id="rain-node"><h3>RAIN</h3>
+        <div class="rain-components"><div class="region-encoder" id="region-encoder">Region encoder</div>
+          <div class="rain-branch" aria-hidden="true"><span>↓</span><span>↓</span></div>
+          <div class="decoder-row"><div class="action-decoder">Action<br>decoder</div><div class="transition-head" id="transition-head">Transition<br>head</div></div>
+        </div>
+        <div class="rain-outputs"><span id="action-output">Action</span><span id="transition-value">Transition: No</span></div>
+      </div>
+    </div>
+    <div class="pipeline-caption"><span id="stage-name">Observe</span><p id="live-stage" aria-live="polite">Start with the robot’s current observation.</p></div>
+  </div>
+  <div class="pipeline-controls"><button class="mini-button" id="pipeline-play" type="button">Play animation</button>
+    <button class="mini-button" id="pipeline-reset" type="button">Replay</button>
+    <input id="pipeline-seek" type="range" min="0" max="48" step="0.05" value="0" aria-label="Animation timeline">
+    <output id="pipeline-time">0.0 / 48.0 s</output></div>
+  <p class="pipeline-explanation">RAIN receives images, target masks, and the current action type. It predicts actions and a transition decision; a Yes activates the next subtask.</p>
+  <p class="pipeline-credit">Recorded execution with SAM3 tracking and visual target initialization. The animation illustrates the control flow.</p>
+</div></section>
+
+    <section class="section" id="method"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">The method</p><h2>Region-Aware Interaction Networks</h2>
+        <p>Learn how to interact with a target region.</p></div>
+      <figure class="method-figure"><img src="assets/images/method.svg" alt="RAIN architecture. TCE conditions multi-stage, multi-view features on target masks with TarLN. PlanDiT predicts waypoints and action chunks. The Transition Head predicts subtask completion." loading="lazy"></figure>
+      <p class="method-copy">The <strong>Target-adaptive Cross-view Encoder (TCE)</strong> uses Target-adaptive Layer Normalization (TarLN) to condition each view’s multi-stage visual features on its target mask, then exchanges information across views. <strong>PlanDiT</strong> jointly predicts target-directed waypoints and action chunks. The <strong>Transition Head</strong> pools target-region features and combines the views through gated fusion to determine when to advance to the next subtask.</p>
+      <div class="rrs"><h3>Reference-based Retargeting Strategy</h3>
+        <p>RRS generates smooth approaches to alternative target regions by joining a new trajectory to a recorded reference, preserving its contact-rich interaction. This expands training coverage without collecting additional data.</p>
+        <video controls autoplay muted playsinline loop preload="none" data-src="assets/videos/rrs.mp4" data-autoplay poster="assets/posters/rrs.webp" aria-label="Reference-based Retargeting Strategy video demonstration"></video>
+      </div>
+    </div></section>
+    <section class="section soft-section" id="results"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">Experiments</p><h2>Results</h2><p>Success rates on LIBERO and LIBERO-Analogy, followed by the VLM comparison.</p></div>
+      <section class="table-block" aria-labelledby="table1-heading"><h3 class="table-heading" id="table1-heading"><span>Table 1</span>Comparison on LIBERO and LIBERO-Analogy</h3>
+        <p class="scroll-hint">Scroll horizontally to see all columns →</p><div class="table-scroll" tabindex="0" role="region" aria-label="Table 1, scrollable model comparison"><table class="results-table table1"><thead>
+      <tr><th rowspan="2" scope="col">Method</th><th class="benchmark-start params-group" colspan="2" scope="colgroup">Trainable parameters</th><th class="benchmark-start analogy-group" colspan="4" scope="colgroup">LIBERO-Analogy</th><th class="benchmark-start libero-group" colspan="5" scope="colgroup">LIBERO</th></tr>
+      <tr><th class="benchmark-start" scope="col">Pre-train</th><th scope="col">Post-train</th><th class="benchmark-start" data-suite="Adapt" scope="col">Adapt</th><th data-suite="Compose" scope="col">Compose</th><th data-suite="Decompose" scope="col">Decompose</th><th scope="col">Avg.</th><th class="benchmark-start" scope="col">Spatial</th><th scope="col">Object</th><th scope="col">Goal</th><th scope="col">Long</th><th scope="col">Avg.</th></tr>
+      </thead><tbody><tr class="group-row"><th colspan="12" scope="colgroup">Regular VLA models</th></tr><tr class=""><th class="row-name" scope="row">SmolVLA <span class="venue">(arXiv&#x27;25)</span></th><td class="benchmark-start">0.1B</td><td class="">0.1B</td><td class="benchmark-start">5.6</td><td class="">0.0</td><td class="">5.4</td><td class="avg">3.7</td><td class="benchmark-start">90.0</td><td class="">96.0</td><td class="">92.0</td><td class="">71.0</td><td class="avg">87.3</td></tr><tr class=""><th class="row-name" scope="row">OpenVLA-OFT <span class="venue">(RSS&#x27;25)</span></th><td class="benchmark-start">7B</td><td class="">0.3B</td><td class="benchmark-start">18.4</td><td class="">6.0</td><td class="">6.4</td><td class="avg">10.3</td><td class="benchmark-start">97.6</td><td class="">98.4</td><td class="">97.9</td><td class="">94.5</td><td class="avg">97.1</td></tr><tr class=""><th class="row-name" scope="row">GR00T N1.6† <span class="venue">(arXiv&#x27;25)</span></th><td class="benchmark-start">3B</td><td class="">3B</td><td class="benchmark-start">27.5</td><td class="">10.6</td><td class="">9.8</td><td class="avg">16.0</td><td class="benchmark-start">96.6</td><td class="">100.0</td><td class="">95.8</td><td class="">93.0</td><td class="avg">96.3</td></tr><tr class=""><th class="row-name" scope="row">π₀ <span class="venue">(RSS&#x27;25)</span></th><td class="benchmark-start">3B</td><td class="">3B</td><td class="benchmark-start">13.6</td><td class="">1.1</td><td class="">15.5</td><td class="avg">10.1</td><td class="benchmark-start">96.8</td><td class="">98.8</td><td class="">95.8</td><td class="">85.2</td><td class="avg">94.2</td></tr><tr class=""><th class="row-name" scope="row">π₀.₅ <span class="venue">(CoRL&#x27;25)</span></th><td class="benchmark-start">3B</td><td class="">3B</td><td class="benchmark-start">57.1</td><td class="">10.7</td><td class="">7.6</td><td class="avg">25.1</td><td class="benchmark-start">98.8</td><td class="">98.2</td><td class="">98.0</td><td class="">92.4</td><td class="avg">96.9</td></tr><tr class=""><th class="row-name" scope="row">Evo-1 <span class="venue">(CVPR&#x27;26)</span></th><td class="benchmark-start">0.1B</td><td class="">0.8B</td><td class="benchmark-start">24.0</td><td class="">0.3</td><td class="">9.5</td><td class="avg">11.3</td><td class="benchmark-start">92.7</td><td class="">97.7</td><td class="">96.3</td><td class="">92.3</td><td class="avg">94.8</td></tr><tr class="group-row"><th colspan="12" scope="colgroup">World-action models</th></tr><tr class=""><th class="row-name" scope="row">Cosmos Policy <span class="venue">(ICLR&#x27;26)</span></th><td class="benchmark-start">-</td><td class="">2B</td><td class="benchmark-start">29.1</td><td class="">5.0</td><td class="">7.1</td><td class="avg">13.7</td><td class="benchmark-start">98.1</td><td class="">100.0</td><td class="">98.2</td><td class="">97.6</td><td class="avg">98.5</td></tr><tr class=""><th class="row-name" scope="row">VLA-JEPA <span class="venue">(ECCV&#x27;26)</span></th><td class="benchmark-start">2.4B</td><td class="">2.4B</td><td class="benchmark-start">42.1</td><td class="">5.8</td><td class="">7.8</td><td class="avg">18.6</td><td class="benchmark-start">96.2</td><td class="">99.6</td><td class="">97.2</td><td class="">95.8</td><td class="avg">97.2</td></tr><tr class=""><th class="row-name" scope="row">Flex-π <span class="venue">(arXiv&#x27;26)</span></th><td class="benchmark-start">6B</td><td class="">6B</td><td class="benchmark-start">36.7</td><td class="">11.3</td><td class="">11.1</td><td class="avg">19.7</td><td class="benchmark-start">99.2</td><td class="">99.8</td><td class="">99.0</td><td class="">98.6</td><td class="avg">99.2</td></tr><tr class="group-row"><th colspan="12" scope="colgroup">VLA models with spatial reasoning</th></tr><tr class=""><th class="row-name" scope="row">InspireVLA <span class="venue">(ICRA&#x27;26)</span></th><td class="benchmark-start">1B</td><td class="">1B</td><td class="benchmark-start">29.2</td><td class="">0.0</td><td class="">66.4</td><td class="avg">31.9</td><td class="benchmark-start">90.7</td><td class="">94.3</td><td class="">88.3</td><td class="">73.3</td><td class="avg">86.7</td></tr><tr class=""><th class="row-name" scope="row">Action-Sketcher <span class="venue">(CVPR&#x27;26)</span></th><td class="benchmark-start">3B</td><td class="">3B</td><td class="benchmark-start">35.8</td><td class="">2.0</td><td class="">6.6</td><td class="avg">14.8</td><td class="benchmark-start">97.2</td><td class="">99.6</td><td class="">94.8</td><td class="">96.0</td><td class="avg">96.9</td></tr><tr class=""><th class="row-name" scope="row">MolmoAct2 <span class="venue">(CoRL&#x27;26)</span></th><td class="benchmark-start">4.4B</td><td class="">5B</td><td class="benchmark-start">53.9</td><td class="">29.5</td><td class="">22.4</td><td class="avg">35.3</td><td class="benchmark-start">97.8</td><td class="">100.0</td><td class="">97.8</td><td class="">93.2</td><td class="avg">97.2</td></tr><tr class="rain-row"><th class="row-name" scope="row">RAIN<small>Qwen3.5-4B + SAM3</small></th><td class="benchmark-start">-</td><td class="">0.2B</td><td class="benchmark-start">53.3</td><td class="">31.0</td><td class="">77.5</td><td class="avg">53.9</td><td class="benchmark-start">92.4</td><td class="">96.8</td><td class="">91.2</td><td class="">82.4</td><td class="avg">90.7</td></tr><tr class="rain-row rain-gt"><th class="row-name" scope="row">RAIN (GT masks)</th><td class="benchmark-start">-</td><td class="">0.2B</td><td class="benchmark-start">62.4</td><td class="">37.1</td><td class="">82.7</td><td class="avg">60.7</td><td class="benchmark-start">93.6</td><td class="">99.0</td><td class="">95.2</td><td class="">93.6</td><td class="avg">95.4</td></tr></tbody></table></div>
+        <p class="table-note">Success rate (%). † Our reproduction with a single model jointly fine-tuned on the four LIBERO suites.</p></section>
+      <section class="table-block" aria-labelledby="table2-heading"><h3 class="table-heading" id="table2-heading"><span>Table 2</span>VLM comparison: task success and goal-mask tracking</h3>
+        <p class="scroll-hint">Scroll horizontally to see all columns →</p><div class="table-scroll" tabindex="0" role="region" aria-label="Table 2, scrollable VLM SR and J and F comparison"><table class="results-table wide-table"><thead>
+      <tr><th rowspan="3" scope="col">VLM</th><th class="benchmark-start libero-group" colspan="10" scope="colgroup">LIBERO</th><th class="benchmark-start analogy-group" colspan="8" scope="colgroup">LIBERO-Analogy</th></tr>
+      <tr><th class="benchmark-start" data-suite="" colspan="2" scope="colgroup">Spatial</th><th class="" data-suite="" colspan="2" scope="colgroup">Object</th><th class="" data-suite="" colspan="2" scope="colgroup">Goal</th><th class="" data-suite="" colspan="2" scope="colgroup">Long</th><th class="" data-suite="" colspan="2" scope="colgroup">Overall</th><th class="benchmark-start" data-suite="Adapt" colspan="2" scope="colgroup">Adapt</th><th class="" data-suite="Compose" colspan="2" scope="colgroup">Compose</th><th class="" data-suite="Decompose" colspan="2" scope="colgroup">Decompose</th><th class="" data-suite="" colspan="2" scope="colgroup">Overall</th></tr><tr><th class="benchmark-start" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th><th class="benchmark-start" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th><th class="" scope="col">SR</th><th scope="col">J&amp;F</th></tr></thead><tbody><tr><th class="row-name" scope="row">Qwen3.5-4B</th><td class="benchmark-start">92.4</td><td class="">80.0</td><td class="">96.8</td><td class="">76.1</td><td class="">91.2</td><td class="">55.9</td><td class="">82.4</td><td class="">57.8</td><td class="avg">90.7</td><td class="avg">65.4</td><td class="benchmark-start">53.3</td><td class="">60.9</td><td class="">31.0</td><td class="">51.9</td><td class="">77.5</td><td class="">49.4</td><td class="avg">53.9</td><td class="avg">53.7</td></tr><tr><th class="row-name" scope="row">Qwen3.5-9B</th><td class="benchmark-start">91.6</td><td class="">80.7</td><td class="">95.8</td><td class="">75.4</td><td class="">90.0</td><td class="">55.3</td><td class="">81.4</td><td class="">57.6</td><td class="avg">89.7</td><td class="avg">65.2</td><td class="benchmark-start">53.2</td><td class="">59.5</td><td class="">30.0</td><td class="">52.8</td><td class="">77.4</td><td class="">49.8</td><td class="avg">53.5</td><td class="avg">54.0</td></tr><tr><th class="row-name" scope="row">Cosmos-Reason2-8B</th><td class="benchmark-start">87.6</td><td class="">83.3</td><td class="">90.2</td><td class="">72.2</td><td class="">87.4</td><td class="">55.7</td><td class="">83.0</td><td class="">59.8</td><td class="avg">87.1</td><td class="avg">66.3</td><td class="benchmark-start">60.6</td><td class="">63.4</td><td class="">29.9</td><td class="">56.4</td><td class="">76.2</td><td class="">51.8</td><td class="avg">55.6</td><td class="avg">57.3</td></tr></tbody></table></div>
+        <p class="table-note">All VLMs use SAM3 for segmentation and tracking. SR (%) and tracking J&amp;F (%) are measured on the same rollouts. J&amp;F pools visible-target observations across both views and tasks.</p></section>
+    </div></section></main>
+<footer class="page-footer"><div class="wrap">
+  <p>RAIN · Region-Aware Interaction Networks</p>
+  <p><a href="https://github.com/Seung-Hun-Lee/RAIN">Code</a> · <a href="gallery.html">LIBERO-Analogy gallery</a> · <a href="https://seung-hun-lee.github.io/">More research</a></p>
+</div></footer>
+</body></html>
