@@ -553,18 +553,44 @@
 }
 
 .paper-venue {
-    position: absolute;
-    top: .55rem;
-    left: 0;
-    z-index: 1;
-    padding: .28rem .65rem;
-    border-radius: 0 4px 4px 0;
-    background: #2547ad;
-    box-shadow: 0 4px 10px rgba(20, 30, 45, .14);
-    color: #fff;
-    font-size: .72rem;
-    font-weight: 800;
-    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    margin-bottom: .6rem;
+    padding: .4rem .7rem;
+    border: 1px solid #cce3d9;
+    border-radius: 6px;
+    background: #edf6f1;
+    color: #23624a;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.25;
+    white-space: nowrap;
+}
+
+.paper-venue__year {
+    padding-left: .55rem;
+    border-left: 1px solid currentColor;
+    font-weight: 500;
+    opacity: .9;
+}
+
+.paper-venue--iccv {
+    border-color: #d4e0f3;
+    background: #eef3fc;
+    color: #365894;
+}
+
+.paper-venue--wacv {
+    border-color: #cbe4e8;
+    background: #ecf6f7;
+    color: #256572;
+}
+
+.paper-venue--bmvc {
+    border-color: #e6d6e1;
+    background: #f6eff4;
+    color: #754963;
 }
 
 .paper-note {
@@ -758,9 +784,8 @@
     }
 
     .paper-venue {
-        top: .45rem;
-        padding: .25rem .55rem;
-        font-size: .68rem;
+        padding: .38rem .65rem;
+        font-size: .86rem;
     }
 
     .activity-timeline .timeline-item {
