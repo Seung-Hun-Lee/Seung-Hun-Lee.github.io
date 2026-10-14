@@ -84,7 +84,7 @@ Styles are in `assets/style.css`. Video playback and gallery filtering are in
 `assets/main.js`; animation state and mask rendering are in `assets/pipeline.js`.
 Keep `data/robot_masks.json` synchronized with `assets/videos/potato.mp4`.
 
-Paper and Assets buttons await their release URLs. Code links to
+Paper: https://arxiv.org/abs/2610.14039. Code:
 https://github.com/Seung-Hun-Lee/RAIN.
 
 Preview through the parent Jekyll build. Check desktop and mobile layouts, gallery
