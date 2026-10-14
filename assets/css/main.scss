@@ -477,22 +477,6 @@
             line-height: 1.55;
         }
 
-        > p:last-child {
-            margin: .85rem 0 0;
-
-            a {
-                color: #2547ad;
-                font-size: .84rem;
-                font-weight: 700;
-                text-decoration: none;
-
-                &:hover {
-                    color: #17347f;
-                    text-decoration: underline;
-                }
-            }
-        }
-
         img {
             max-width: 100%;
             height: auto;
@@ -502,6 +486,67 @@
     @include breakpoint($large) {
         grid-template-columns: 390px minmax(0, 1fr);
         gap: 1.6rem;
+    }
+}
+
+.paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .55rem;
+    margin-top: .85rem;
+}
+
+.paper-links .paper-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    min-height: 2.3rem;
+    padding: .45rem .9rem;
+    border: 1px solid #363636;
+    border-radius: 999px;
+    background: #363636;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: background-color .15s ease, border-color .15s ease;
+
+    &:visited {
+        color: #fff;
+    }
+
+    &:hover {
+        border-color: #282828;
+        background: #282828;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:focus-visible {
+        outline: 2px solid #b9c9ef;
+        outline-offset: -4px;
+    }
+
+    i {
+        width: 1rem;
+        flex: 0 0 1rem;
+        text-align: center;
+    }
+}
+
+.paper-stars {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.3rem;
+    max-width: 100%;
+
+    img {
+        display: block;
     }
 }
 
@@ -572,8 +617,6 @@
 }
 
 .paper-venue__year {
-    padding-left: .55rem;
-    border-left: 1px solid currentColor;
     font-weight: 500;
     opacity: .9;
 }

@@ -133,7 +133,12 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**<sup>*</sup>, Kyuhwan Shim<sup>*</sup>, Yeogyeong Song<sup>*</sup>, Seung Hwan Kim, Sihaeng Lee, Byoung-Tak Zhang, Sunghoon Im<sup>&dagger;</sup>, Gunhee Lee<sup>&dagger;</sup>
 
-  [**Paper**](https://arxiv.org/abs/2610.14039) \| [**Project**](https://seung-hun-lee.github.io/projects/RAIN/) \| [**Code**](https://github.com/Seung-Hun-Lee/RAIN) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/RAIN?style=social&label=RAIN%20Stars)](https://github.com/Seung-Hun-Lee/RAIN)
+  <div class="paper-links">
+    <a class="paper-link" href="https://arxiv.org/abs/2610.14039" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://seung-hun-lee.github.io/projects/RAIN/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
+    <a class="paper-link" href="https://github.com/Seung-Hun-Lee/RAIN" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Seung-Hun-Lee/RAIN" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Seung-Hun-Lee/RAIN?style=social&amp;label=RAIN%20Stars" alt="RAIN GitHub stars" loading="lazy"></a>
+  </div>
 
   </div>
   </div>
@@ -146,7 +151,11 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo<sup>*</sup>, Jeonghoon Kim<sup>*</sup>, Sungho Moon<sup>*</sup>, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/TGL/) \| [**Code**](https://github.com/Seung-Hun-Lee/TGL)
+  <div class="paper-links">
+    <a class="paper-link" href="https://arxiv.org/abs/2508.11955" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://seung-hun-lee.github.io/projects/TGL/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
+    <a class="paper-link" href="https://github.com/Seung-Hun-Lee/TGL" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+  </div>
 
   </div>
   </div>
@@ -159,7 +168,9 @@ redirect_from:
 
   Sungho Moon, Kota Shimomura, Junwoo Park, Wonhyeok Choi, **<u>Seunghun Lee</u>**, Takayoshi Yamashita, Sunghoon Im
 
-  [**Paper**](https://arxiv.org/abs/2609.34853)
+  <div class="paper-links">
+    <a class="paper-link" href="https://arxiv.org/abs/2609.34853" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+  </div>
 
   </div>
   </div>
@@ -181,7 +192,10 @@ redirect_from:
 
   Sungho Moon<sup>*</sup>, **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://openaccess.thecvf.com/content/CVPR2026/html/Moon_CVA_Context-aware_Video-text_Alignment_for_Video_Temporal_Grounding_CVPR_2026_paper.html) \| [**Project**](https://byeol3325.github.io/projects/CVA/)
+  <div class="paper-links">
+    <a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Moon_CVA_Context-aware_Video-text_Alignment_for_Video_Temporal_Grounding_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://byeol3325.github.io/projects/CVA/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
+  </div>
 
   </div>
   </div>
@@ -196,7 +210,9 @@ redirect_from:
 
   Wonhyeok Choi, Kyumin Hwang, Jihun Park, Kyoungmin Lee, **<u>Seunghun Lee</u>**, Jaeyeul Kim, Minwoo Choi, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://openaccess.thecvf.com/content/CVPR2026/html/Choi_TaskForce_Cooperative_Multi-agent_Reinforcement_Learning_for_Multi-task_Optimization_CVPR_2026_paper.html)
+  <div class="paper-links">
+    <a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Choi_TaskForce_Cooperative_Multi-agent_Reinforcement_Learning_for_Multi-task_Optimization_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+  </div>
 
   </div>
   </div>
@@ -211,7 +227,12 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**, Jiwan Seo, Minwoo Choi, Kiljoon Han, Jaehoon Jeong, Zane Durante, Ehsan Adeli<sup>&dagger;</sup>, Sang Hyun Park, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://arxiv.org/abs/2507.19754) \| [**Project**](https://seung-hun-lee.github.io/projects/LOMM/) \| [**Code**](https://github.com/Seung-Hun-Lee/LOMM) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/LOMM?style=social&label=LOMM%20Stars)](https://github.com/Seung-Hun-Lee/LOMM)
+  <div class="paper-links">
+    <a class="paper-link" href="https://arxiv.org/abs/2507.19754" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://seung-hun-lee.github.io/projects/LOMM/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
+    <a class="paper-link" href="https://github.com/Seung-Hun-Lee/LOMM" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Seung-Hun-Lee/LOMM" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Seung-Hun-Lee/LOMM?style=social&amp;label=LOMM%20Stars" alt="LOMM GitHub stars" loading="lazy"></a>
+  </div>
 
   </div>
   </div>
@@ -226,7 +247,12 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo<sup>*</sup>, Kiljoon Han, Minwoo Choi, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://arxiv.org/abs/2407.03010) \| [**Project**](https://seung-hun-lee.github.io/projects/CAVIS/) \| [**Code**](https://github.com/Seung-Hun-Lee/CAVIS) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/CAVIS?style=social&label=CAVIS%20Stars)](https://github.com/Seung-Hun-Lee/CAVIS)
+  <div class="paper-links">
+    <a class="paper-link" href="https://arxiv.org/abs/2407.03010" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://seung-hun-lee.github.io/projects/CAVIS/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
+    <a class="paper-link" href="https://github.com/Seung-Hun-Lee/CAVIS" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Seung-Hun-Lee/CAVIS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Seung-Hun-Lee/CAVIS?style=social&amp;label=CAVIS%20Stars" alt="CAVIS GitHub stars" loading="lazy"></a>
+  </div>
 
   </div>
   </div>
@@ -241,7 +267,12 @@ redirect_from:
 
   Jihun Park<sup>*</sup>, Jongmin Gim<sup>*</sup>, Kyoungmin Lee<sup>*</sup>, **<u>Seunghun Lee</u>**, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://openaccess.thecvf.com/content/CVPR2025/html/Park_Style-Editor_Text-driven_Object-centric_Style_Editing_CVPR_2025_paper.html) \| [**Project**](https://jihun999.github.io/projects/Style-Editor/) \| [**Code**](https://github.com/Jihun999/Style-Editor) \| [![](https://img.shields.io/github/stars/Jihun999/Style-Editor?style=social&label=Style-Editor%20Stars)](https://github.com/Jihun999/Style-Editor)
+  <div class="paper-links">
+    <a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2025/html/Park_Style-Editor_Text-driven_Object-centric_Style_Editing_CVPR_2025_paper.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://jihun999.github.io/projects/Style-Editor/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
+    <a class="paper-link" href="https://github.com/Jihun999/Style-Editor" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Jihun999/Style-Editor" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Jihun999/Style-Editor?style=social&amp;label=Style-Editor%20Stars" alt="Style-Editor GitHub stars" loading="lazy"></a>
+  </div>
 
   </div>
   </div>
@@ -256,7 +287,9 @@ redirect_from:
 
   Hojin Kim, **<u>Seunghun Lee</u>**, Hyeon Kang, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://openaccess.thecvf.com/content/WACV2024/html/Kim_Offline-to-Online_Knowledge_Distillation_for_Video_Instance_Segmentation_WACV_2024_paper.html)
+  <div class="paper-links">
+    <a class="paper-link" href="https://openaccess.thecvf.com/content/WACV2024/html/Kim_Offline-to-Online_Knowledge_Distillation_for_Video_Instance_Segmentation_WACV_2024_paper.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+  </div>
 
   </div>
   </div>
@@ -271,7 +304,9 @@ redirect_from:
 
   Changjae Kim, **<u>Seunghun Lee</u>**, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://papers.bmvc2023.org/0633.pdf)
+  <div class="paper-links">
+    <a class="paper-link" href="https://papers.bmvc2023.org/0633.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+  </div>
 
   </div>
   </div>
@@ -286,7 +321,11 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**, Wonhyeok Choi, Changjae Kim, Minwoo Choi, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://openaccess.thecvf.com/content/CVPR2022/html/Lee_ADAS_A_Direct_Adaptation_Strategy_for_Multi-Target_Domain_Adaptive_Semantic_CVPR_2022_paper.html) \| [**Code**](https://github.com/Seung-Hun-Lee/ADAS) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/ADAS?style=social&label=ADAS%20Stars)](https://github.com/Seung-Hun-Lee/ADAS)
+  <div class="paper-links">
+    <a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2022/html/Lee_ADAS_A_Direct_Adaptation_Strategy_for_Multi-Target_Domain_Adaptive_Semantic_CVPR_2022_paper.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://github.com/Seung-Hun-Lee/ADAS" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Seung-Hun-Lee/ADAS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Seung-Hun-Lee/ADAS?style=social&amp;label=ADAS%20Stars" alt="ADAS GitHub stars" loading="lazy"></a>
+  </div>
 
   </div>
   </div>
@@ -301,7 +340,11 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**, Sunghyun Cho, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://openaccess.thecvf.com/content/CVPR2021/html/Lee_DRANet_Disentangling_Representation_and_Adaptation_Networks_for_Unsupervised_Cross-Domain_Adaptation_CVPR_2021_paper.html) \| [**Code**](https://github.com/Seung-Hun-Lee/DRANet) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/DRANet?style=social&label=DRANet%20Stars)](https://github.com/Seung-Hun-Lee/DRANet)
+  <div class="paper-links">
+    <a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2021/html/Lee_DRANet_Disentangling_Representation_and_Adaptation_Networks_for_Unsupervised_Cross-Domain_Adaptation_CVPR_2021_paper.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
+    <a class="paper-link" href="https://github.com/Seung-Hun-Lee/DRANet" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Seung-Hun-Lee/DRANet" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Seung-Hun-Lee/DRANet?style=social&amp;label=DRANet%20Stars" alt="DRANet GitHub stars" loading="lazy"></a>
+  </div>
 
   </div>
   </div>
