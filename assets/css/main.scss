@@ -500,7 +500,7 @@
     }
 
     @include breakpoint($large) {
-        grid-template-columns: 250px minmax(0, 1fr);
+        grid-template-columns: 300px minmax(0, 1fr);
         gap: 1.6rem;
     }
 }
@@ -513,16 +513,43 @@
     overflow: hidden;
 }
 
-.paper-thumbnail {
+.paper-thumbnail,
+.paper-video {
     display: block;
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 2.35 / 1;
+    aspect-ratio: 16 / 9;
     border: 1px solid #e6ebf2;
     border-radius: 6px;
-    background: #f7f9fc;
     box-sizing: border-box;
     object-fit: contain;
+}
+
+.paper-thumbnail {
+    background: #f7f9fc;
+}
+
+.paper-video {
+    background: #0d1117;
+}
+
+.paper-author-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem 1.1rem;
+    margin: -.4rem 0 1rem;
+    color: #667085;
+    font-size: .82rem;
+    line-height: 1.45;
+
+    span {
+        white-space: nowrap;
+    }
+
+    sup {
+        color: #2547ad;
+        font-weight: 800;
+    }
 }
 
 .paper-venue {

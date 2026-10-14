@@ -35,6 +35,7 @@ redirect_from:
     <h2>Recent Updates</h2>
   </div>
   <ul class="clean-list dated-list news-list">
+    <li><time>2026.10</time><span>Selected as a <strong>Top Reviewer</strong> at NeurIPS 2026.</span></li>
     <li><time>2026.06</time><span>Joined <strong>Huawei Singapore Research Center</strong> as an AI Engineer.</span></li>
     <li><time>2026.03</time><span>Started as a <strong>postdoctoral researcher</strong> at DGIST.</span></li>
     <li><time>2026.02</time><span><strong>Two papers accepted</strong> to CVPR 2026.</span></li>
@@ -122,6 +123,20 @@ redirect_from:
   <div class="section-heading section-heading--left">
     <h2>Preprint</h2>
   </div>
+  <p class="paper-author-legend"><span><sup>*</sup> Co-first author</span><span><sup>&dagger;</sup> Corresponding author</span></p>
+
+  <div class="paper-box">
+  <div class="paper-box-image"><div class="paper-visual"><video class="paper-video" autoplay muted loop playsinline preload="metadata" poster="projects/RAIN/assets/posters/hero.webp" aria-label="RAIN robot task generalization preview"><source src="images/videos/RAIN_preview.mp4" type="video/mp4"></video></div></div>
+  <div class="paper-box-text" markdown="1">
+
+  **RAIN: Robotic Task Generalization with Region-Aware Interaction Networks**
+
+  **<u>Seunghun Lee</u>**<sup>*</sup>, Kyuhwan Shim<sup>*</sup>, Yeogyeong Song<sup>*</sup>, Seung Hwan Kim, Sihaeng Lee, Byoung-Tak Zhang, Sunghoon Im<sup>&dagger;</sup>, Gunhee Lee<sup>&dagger;</sup>
+
+  [**Paper**](https://arxiv.org/abs/2610.14039) \| [**Project**](https://seung-hun-lee.github.io/projects/RAIN/) \| [**Code**](https://github.com/Seung-Hun-Lee/RAIN) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/RAIN?style=social&label=RAIN%20Stars)](https://github.com/Seung-Hun-Lee/RAIN)
+
+  </div>
+  </div>
 
   <div class="paper-box">
   <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/samdwich.png" alt="Temporal Grounding project thumbnail" loading="lazy"></div></div>
@@ -129,9 +144,22 @@ redirect_from:
 
   **Temporal Grounding as A Learning Signal for Referring Video Object Segmentation**
 
-  **<u>Seunghun Lee*</u>**, Jiwan Seo\*, Jeonghoon Kim\*, Sungho Moon\*, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im†
+  **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo<sup>*</sup>, Jeonghoon Kim<sup>*</sup>, Sungho Moon<sup>*</sup>, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/TGL/)
+  [**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/TGL/) \| [**Code**](https://github.com/Seung-Hun-Lee/TGL) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/TGL?style=social&label=TGL%20Stars)](https://github.com/Seung-Hun-Lee/TGL)
+
+  </div>
+  </div>
+
+  <div class="paper-box">
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/EviSplat_2026.png" alt="EviSplat multi-view evidence overview" loading="lazy"></div></div>
+  <div class="paper-box-text" markdown="1">
+
+  **EviSplat: Preserving Multi-View Evidence in 3D Gaussian Splatting for Open-Vocabulary Segmentation**
+
+  Sungho Moon, Kota Shimomura, Junwoo Park, Wonhyeok Choi, **<u>Seunghun Lee</u>**, Takayoshi Yamashita, Sunghoon Im
+
+  [**Paper**](https://arxiv.org/abs/2609.34853)
 
   </div>
   </div>
@@ -141,6 +169,7 @@ redirect_from:
   <div class="section-heading section-heading--left">
     <h2>Publications</h2>
   </div>
+  <p class="paper-author-legend"><span><sup>*</sup> Co-first author</span><span><sup>&dagger;</sup> Corresponding author</span></p>
 
   <div class="paper-box">
   <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">CVPR 2026</div><img class="paper-thumbnail" src="images/CVA_CVPR_2026.png" alt="CVA framework overview" loading="lazy"></div></div>
@@ -148,7 +177,7 @@ redirect_from:
 
   **CVA: Context-aware Video-text Alignment for Video Temporal Grounding**
 
-  Sungho Moon\*, **<u>Seunghun Lee*</u>**, Jiwan Seo, Sunghoon Im†
+  Sungho Moon<sup>*</sup>, **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://openaccess.thecvf.com/content/CVPR2026/html/Moon_CVA_Context-aware_Video-text_Alignment_for_Video_Temporal_Grounding_CVPR_2026_paper.html) \| [**Project**](https://byeol3325.github.io/projects/CVA/)
 
@@ -161,7 +190,7 @@ redirect_from:
 
   **TaskForce: Cooperative Multi-agent Reinforcement Learning for Multi-task Optimization**
 
-  Wonhyeok Choi, Kyumin Hwang, Jihun Park, Kyoungmin Lee, **<u>Seunghun Lee</u>**, Jaeyeul Kim, Minwoo Choi, Sunghoon Im†
+  Wonhyeok Choi, Kyumin Hwang, Jihun Park, Kyoungmin Lee, **<u>Seunghun Lee</u>**, Jaeyeul Kim, Minwoo Choi, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://openaccess.thecvf.com/content/CVPR2026/html/Choi_TaskForce_Cooperative_Multi-agent_Reinforcement_Learning_for_Multi-task_Optimization_CVPR_2026_paper.html)
 
@@ -169,12 +198,12 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">ICCV 2025</div><img class="paper-thumbnail" src="images/LOMM_ICCV_2025.png" alt="LOMM project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">ICCV 2025</div><video class="paper-video" autoplay muted loop playsinline preload="metadata" poster="images/LOMM_ICCV_2025.png" aria-label="LOMM memory management preview"><source src="projects/LOMM/videos/apt.mp4" type="video/mp4"></video></div></div>
   <div class="paper-box-text" markdown="1">
 
   **Latest Object Memory Management for Temporally Consistent Video Instance Segmentation**
 
-  **<u>Seunghun Lee</u>**, Jiwan Seo, Minwoo Choi, Kiljoon Han, Jaehoon Jeong, Zane Durante, Ehsan Adeli†, Sang Hyun Park, Sunghoon Im†
+  **<u>Seunghun Lee</u>**, Jiwan Seo, Minwoo Choi, Kiljoon Han, Jaehoon Jeong, Zane Durante, Ehsan Adeli<sup>&dagger;</sup>, Sang Hyun Park, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://arxiv.org/abs/2507.19754) \| [**Project**](https://seung-hun-lee.github.io/projects/LOMM/) \| [**Code**](https://github.com/Seung-Hun-Lee/LOMM) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/LOMM?style=social&label=LOMM%20Stars)](https://github.com/Seung-Hun-Lee/LOMM)
 
@@ -182,12 +211,12 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">ICCV 2025</div><img class="paper-thumbnail" src="images/CAVIS_2024.png" alt="CAVIS project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">ICCV 2025</div><video class="paper-video paper-video--square" autoplay muted loop playsinline preload="metadata" poster="images/CAVIS_2024.png" aria-label="CAVIS context-aware instance segmentation preview"><source src="images/videos/CAVIS_preview.mp4" type="video/mp4"></video></div></div>
   <div class="paper-box-text" markdown="1">
 
   **CAVIS: Context-Aware Video Instance Segmentation**
 
-  **<u>Seunghun Lee*</u>**, Jiwan Seo\*, Kiljoon Han, Minwoo Choi, Sunghoon Im†
+  **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo<sup>*</sup>, Kiljoon Han, Minwoo Choi, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://arxiv.org/abs/2407.03010) \| [**Project**](https://seung-hun-lee.github.io/projects/CAVIS/) \| [**Code**](https://github.com/Seung-Hun-Lee/CAVIS) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/CAVIS?style=social&label=CAVIS%20Stars)](https://github.com/Seung-Hun-Lee/CAVIS)
 
@@ -200,7 +229,7 @@ redirect_from:
 
   **Style-Editor: Text-driven object-centric style editing** <span class="paper-note">(Highlight, Top 3.7%)</span>
 
-  Jihun Park\*, Jongmin Gim\*, Kyoungmin Lee\*, **<u>Seunghun Lee</u>**, Sunghoon Im†
+  Jihun Park<sup>*</sup>, Jongmin Gim<sup>*</sup>, Kyoungmin Lee<sup>*</sup>, **<u>Seunghun Lee</u>**, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://openaccess.thecvf.com/content/CVPR2025/html/Park_Style-Editor_Text-driven_Object-centric_Style_Editing_CVPR_2025_paper.html) \| [**Project**](https://jihun999.github.io/projects/Style-Editor/) \| [**Code**](https://github.com/Jihun999/Style-Editor) \| [![](https://img.shields.io/github/stars/Jihun999/Style-Editor?style=social&label=Style-Editor%20Stars)](https://github.com/Jihun999/Style-Editor)
 
@@ -213,7 +242,7 @@ redirect_from:
 
   **Offline-to-Online Knowledge Distillation for Video Instance Segmentation** <span class="paper-note">(Oral, Top 2.6%)</span>
 
-  Hojin Kim, **<u>Seunghun Lee</u>**, Hyeon Kang, Sunghoon Im†
+  Hojin Kim, **<u>Seunghun Lee</u>**, Hyeon Kang, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://openaccess.thecvf.com/content/WACV2024/html/Kim_Offline-to-Online_Knowledge_Distillation_for_Video_Instance_Segmentation_WACV_2024_paper.html)
 
@@ -226,7 +255,7 @@ redirect_from:
 
   **Multi-Target Domain Adaptation with Class-Wise Attribute Transfer in Semantic Segmentation**
 
-  Changjae Kim, **<u>Seunghun Lee</u>**, Sunghoon Im†
+  Changjae Kim, **<u>Seunghun Lee</u>**, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://papers.bmvc2023.org/0633.pdf)
 
@@ -239,7 +268,7 @@ redirect_from:
 
   **ADAS: A Direct Adaptation Strategy for Multi-Target Domain Adaptive Semantic Segmentation**
 
-  **<u>Seunghun Lee</u>**, Wonhyeok Choi, Changjae Kim, Minwoo Choi, Sunghoon Im†
+  **<u>Seunghun Lee</u>**, Wonhyeok Choi, Changjae Kim, Minwoo Choi, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://openaccess.thecvf.com/content/CVPR2022/html/Lee_ADAS_A_Direct_Adaptation_Strategy_for_Multi-Target_Domain_Adaptive_Semantic_CVPR_2022_paper.html) \| [**Code**](https://github.com/Seung-Hun-Lee/ADAS) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/ADAS?style=social&label=ADAS%20Stars)](https://github.com/Seung-Hun-Lee/ADAS)
 
@@ -252,7 +281,7 @@ redirect_from:
 
   **DRANet: Disentangling Representation and Adaptation Networks for Unsupervised Cross-Domain Adaptation**
 
-  **<u>Seunghun Lee</u>**, Sunghyun Cho, Sunghoon Im†
+  **<u>Seunghun Lee</u>**, Sunghyun Cho, Sunghoon Im<sup>&dagger;</sup>
 
   [**Paper**](https://openaccess.thecvf.com/content/CVPR2021/html/Lee_DRANet_Disentangling_Representation_and_Adaptation_Networks_for_Unsupervised_Cross-Domain_Adaptation_CVPR_2021_paper.html) \| [**Code**](https://github.com/Seung-Hun-Lee/DRANet) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/DRANet?style=social&label=DRANet%20Stars)](https://github.com/Seung-Hun-Lee/DRANet)
 
@@ -265,6 +294,7 @@ redirect_from:
     <h2>Honor & Award</h2>
   </div>
   <ul class="clean-list dated-list">
+    <li><time>2026.10</time><span><strong>Top Reviewer</strong>, NeurIPS 2026</span></li>
     <li><time>2025.09</time><span><strong>1st Place</strong>, 4th GroceryVision Challenge, Spatial-Temporal Action Localization, ICCV 2025</span></li>
     <li><time>2024.07</time><span><strong>DGIST Post-Graduate Research Abroad Award</strong>, DGIST</span></li>
     <li><time>2024.02</time><span><strong>Participation Prize</strong>, 30th HumanTech Paper Award, Samsung Electronics Co., Ltd.</span></li>
