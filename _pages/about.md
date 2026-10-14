@@ -146,7 +146,7 @@ redirect_from:
 
   **<u>Seunghun Lee</u>**<sup>*</sup>, Jiwan Seo<sup>*</sup>, Jeonghoon Kim<sup>*</sup>, Sungho Moon<sup>*</sup>, Siwon Kim, Haeun Yun, Hyogyeong Jeon, Wonhyeok Choi, Jaehoon Jeong, Zane Durante, Sang Hyun Park, Sunghoon Im<sup>&dagger;</sup>
 
-  [**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/TGL/) \| [**Code**](https://github.com/Seung-Hun-Lee/TGL) \| [![](https://img.shields.io/github/stars/Seung-Hun-Lee/TGL?style=social&label=TGL%20Stars)](https://github.com/Seung-Hun-Lee/TGL)
+  [**Paper**](https://arxiv.org/abs/2508.11955) \| [**Project**](https://seung-hun-lee.github.io/projects/TGL/) \| [**Code**](https://github.com/Seung-Hun-Lee/TGL)
 
   </div>
   </div>
@@ -235,9 +235,9 @@ redirect_from:
   <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/Style-Editor_CVPR_2025.png" alt="Style-Editor project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
-  <div class="paper-venue">CVPR <span class="paper-venue__year">2025</span></div>
+  <div class="paper-venue">CVPR <span class="paper-venue__year">2025</span><span class="paper-venue__distinction"><strong>Highlight</strong><span class="paper-venue__rank">&middot; Top 3.7%</span></span></div>
 
-  **Style-Editor: Text-driven object-centric style editing** <span class="paper-note">(Highlight, Top 3.7%)</span>
+  **Style-Editor: Text-driven object-centric style editing**
 
   Jihun Park<sup>*</sup>, Jongmin Gim<sup>*</sup>, Kyoungmin Lee<sup>*</sup>, **<u>Seunghun Lee</u>**, Sunghoon Im<sup>&dagger;</sup>
 
@@ -250,9 +250,9 @@ redirect_from:
   <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/OOKD_WACV_2024.png" alt="Offline-to-Online Knowledge Distillation project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
-  <div class="paper-venue paper-venue--wacv">WACV <span class="paper-venue__year">2024</span></div>
+  <div class="paper-venue paper-venue--wacv">WACV <span class="paper-venue__year">2024</span><span class="paper-venue__distinction"><strong>Oral</strong><span class="paper-venue__rank">&middot; Top 2.6%</span></span></div>
 
-  **Offline-to-Online Knowledge Distillation for Video Instance Segmentation** <span class="paper-note">(Oral, Top 2.6%)</span>
+  **Offline-to-Online Knowledge Distillation for Video Instance Segmentation**
 
   Hojin Kim, **<u>Seunghun Lee</u>**, Hyeon Kang, Sunghoon Im<sup>&dagger;</sup>
 

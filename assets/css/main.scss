@@ -554,8 +554,10 @@
 
 .paper-venue {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: .55rem;
+    gap: .35rem .55rem;
+    max-width: 100%;
     margin-bottom: .6rem;
     padding: .4rem .7rem;
     border: 1px solid #cce3d9;
@@ -566,6 +568,7 @@
     font-weight: 700;
     line-height: 1.25;
     white-space: nowrap;
+    box-sizing: border-box;
 }
 
 .paper-venue__year {
@@ -593,9 +596,23 @@
     color: #754963;
 }
 
-.paper-note {
-    color: #b42318;
-    font-weight: 700;
+.paper-venue__distinction {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .4rem;
+    padding-left: .55rem;
+    border-left: 1px solid #d2b6a5;
+    color: #9a4323;
+
+    strong {
+        font-weight: 800;
+    }
+}
+
+.paper-venue__rank {
+    color: #7c4e3f;
+    font-size: .82rem;
+    font-weight: 500;
 }
 
 .activity-group + .activity-group {
