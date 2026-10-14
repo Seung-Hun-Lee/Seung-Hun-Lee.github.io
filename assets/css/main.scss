@@ -500,7 +500,7 @@
     }
 
     @include breakpoint($large) {
-        grid-template-columns: 300px minmax(0, 1fr);
+        grid-template-columns: 390px minmax(0, 1fr);
         gap: 1.6rem;
     }
 }
