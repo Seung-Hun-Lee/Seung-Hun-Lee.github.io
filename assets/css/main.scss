@@ -563,7 +563,7 @@
     display: block;
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 16 / 9;
+    height: auto;
     border: 1px solid #e6ebf2;
     border-radius: 6px;
     box-sizing: border-box;
@@ -571,11 +571,16 @@
 }
 
 .paper-thumbnail {
-    background: #f7f9fc;
+    background: #fff;
 }
 
 .paper-video {
+    aspect-ratio: 16 / 9;
     background: #0d1117;
+}
+
+.paper-video--square {
+    aspect-ratio: 1 / 1;
 }
 
 .paper-author-legend {

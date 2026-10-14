@@ -161,7 +161,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/EviSplat_2026.png" alt="EviSplat multi-view evidence overview" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/EviSplat_2026.png" alt="EviSplat multi-view evidence overview" width="1157" height="459" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   **EviSplat: Preserving Multi-View Evidence in 3D Gaussian Splatting for Open-Vocabulary Segmentation**
@@ -183,7 +183,7 @@ redirect_from:
   <p class="paper-author-legend"><span><sup>*</sup> Co-first author</span><span><sup>&dagger;</sup> Corresponding author</span></p>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/CVA_CVPR_2026.png" alt="CVA framework overview" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/CVA_CVPR_2026.png" alt="CVA framework overview" width="1120" height="450" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue">CVPR <span class="paper-venue__year">2026</span></div>
@@ -201,7 +201,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/TaskForce_CVPR_2026.png" alt="TaskForce framework overview" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/TaskForce_CVPR_2026.png" alt="TaskForce framework overview" width="1120" height="510" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue">CVPR <span class="paper-venue__year">2026</span></div>
@@ -258,7 +258,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/Style-Editor_CVPR_2025.png" alt="Style-Editor project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/Style-Editor_CVPR_2025.png" alt="Style-Editor project thumbnail" width="999" height="470" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue">CVPR <span class="paper-venue__year">2025</span><span class="paper-venue__distinction"><strong>Highlight</strong><span class="paper-venue__rank">&middot; Top 3.7%</span></span></div>
@@ -278,7 +278,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/OOKD_WACV_2024.png" alt="Offline-to-Online Knowledge Distillation project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/OOKD_WACV_2024.png" alt="Offline-to-Online Knowledge Distillation project thumbnail" width="400" height="183" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue paper-venue--wacv">WACV <span class="paper-venue__year">2024</span><span class="paper-venue__distinction"><strong>Oral</strong><span class="paper-venue__rank">&middot; Top 2.6%</span></span></div>
@@ -295,7 +295,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/CWAT_BMVC_2023.png" alt="Class-Wise Attribute Transfer project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/CWAT_BMVC_2023.png" alt="Class-Wise Attribute Transfer project thumbnail" width="400" height="197" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue paper-venue--bmvc">BMVC <span class="paper-venue__year">2023</span></div>
@@ -312,7 +312,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/ADAS_CVPR_2022.png" alt="ADAS project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/ADAS_CVPR_2022.png" alt="ADAS project thumbnail" width="400" height="186" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue">CVPR <span class="paper-venue__year">2022</span></div>
@@ -331,7 +331,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/DRANet_CVPR_2021.png" alt="DRANet project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/DRANet_CVPR_2021.png" alt="DRANet project thumbnail" width="400" height="144" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
 
   <div class="paper-venue">CVPR <span class="paper-venue__year">2021</span></div>
