@@ -139,7 +139,7 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/samdwich.png" alt="Temporal Grounding project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><video class="paper-video" autoplay muted loop playsinline preload="metadata" poster="images/samdwich.png" aria-label="TGL referring video object segmentation preview"><source src="images/videos/TGL_preview.mp4" type="video/mp4"></video></div></div>
   <div class="paper-box-text" markdown="1">
 
   **Temporal Grounding as A Learning Signal for Referring Video Object Segmentation**
