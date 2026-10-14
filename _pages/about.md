@@ -172,8 +172,10 @@ redirect_from:
   <p class="paper-author-legend"><span><sup>*</sup> Co-first author</span><span><sup>&dagger;</sup> Corresponding author</span></p>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">CVPR <span class="paper-venue__year">2026</span></div><img class="paper-thumbnail" src="images/CVA_CVPR_2026.png" alt="CVA framework overview" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/CVA_CVPR_2026.png" alt="CVA framework overview" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue">CVPR <span class="paper-venue__year">2026</span></div>
 
   **CVA: Context-aware Video-text Alignment for Video Temporal Grounding**
 
@@ -185,8 +187,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">CVPR <span class="paper-venue__year">2026</span></div><img class="paper-thumbnail" src="images/TaskForce_CVPR_2026.png" alt="TaskForce framework overview" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/TaskForce_CVPR_2026.png" alt="TaskForce framework overview" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue">CVPR <span class="paper-venue__year">2026</span></div>
 
   **TaskForce: Cooperative Multi-agent Reinforcement Learning for Multi-task Optimization**
 
@@ -198,8 +202,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue paper-venue--iccv">ICCV <span class="paper-venue__year">2025</span></div><video class="paper-video" autoplay muted loop playsinline preload="metadata" poster="images/LOMM_ICCV_2025.png" aria-label="LOMM memory management preview"><source src="projects/LOMM/videos/apt.mp4" type="video/mp4"></video></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><video class="paper-video" autoplay muted loop playsinline preload="metadata" poster="images/LOMM_ICCV_2025.png" aria-label="LOMM memory management preview"><source src="projects/LOMM/videos/apt.mp4" type="video/mp4"></video></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue paper-venue--iccv">ICCV <span class="paper-venue__year">2025</span></div>
 
   **Latest Object Memory Management for Temporally Consistent Video Instance Segmentation**
 
@@ -211,8 +217,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue paper-venue--iccv">ICCV <span class="paper-venue__year">2025</span></div><video class="paper-video paper-video--square" autoplay muted loop playsinline preload="metadata" poster="images/CAVIS_2024.png" aria-label="CAVIS context-aware instance segmentation preview"><source src="images/videos/CAVIS_preview.mp4" type="video/mp4"></video></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><video class="paper-video paper-video--square" autoplay muted loop playsinline preload="metadata" poster="images/CAVIS_2024.png" aria-label="CAVIS context-aware instance segmentation preview"><source src="images/videos/CAVIS_preview.mp4" type="video/mp4"></video></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue paper-venue--iccv">ICCV <span class="paper-venue__year">2025</span></div>
 
   **CAVIS: Context-Aware Video Instance Segmentation**
 
@@ -224,8 +232,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">CVPR <span class="paper-venue__year">2025</span></div><img class="paper-thumbnail" src="images/Style-Editor_CVPR_2025.png" alt="Style-Editor project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/Style-Editor_CVPR_2025.png" alt="Style-Editor project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue">CVPR <span class="paper-venue__year">2025</span></div>
 
   **Style-Editor: Text-driven object-centric style editing** <span class="paper-note">(Highlight, Top 3.7%)</span>
 
@@ -237,8 +247,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue paper-venue--wacv">WACV <span class="paper-venue__year">2024</span></div><img class="paper-thumbnail" src="images/OOKD_WACV_2024.png" alt="Offline-to-Online Knowledge Distillation project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/OOKD_WACV_2024.png" alt="Offline-to-Online Knowledge Distillation project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue paper-venue--wacv">WACV <span class="paper-venue__year">2024</span></div>
 
   **Offline-to-Online Knowledge Distillation for Video Instance Segmentation** <span class="paper-note">(Oral, Top 2.6%)</span>
 
@@ -250,8 +262,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue paper-venue--bmvc">BMVC <span class="paper-venue__year">2023</span></div><img class="paper-thumbnail" src="images/CWAT_BMVC_2023.png" alt="Class-Wise Attribute Transfer project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/CWAT_BMVC_2023.png" alt="Class-Wise Attribute Transfer project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue paper-venue--bmvc">BMVC <span class="paper-venue__year">2023</span></div>
 
   **Multi-Target Domain Adaptation with Class-Wise Attribute Transfer in Semantic Segmentation**
 
@@ -263,8 +277,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">CVPR <span class="paper-venue__year">2022</span></div><img class="paper-thumbnail" src="images/ADAS_CVPR_2022.png" alt="ADAS project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/ADAS_CVPR_2022.png" alt="ADAS project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue">CVPR <span class="paper-venue__year">2022</span></div>
 
   **ADAS: A Direct Adaptation Strategy for Multi-Target Domain Adaptive Semantic Segmentation**
 
@@ -276,8 +292,10 @@ redirect_from:
   </div>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><div class="paper-venue">CVPR <span class="paper-venue__year">2021</span></div><img class="paper-thumbnail" src="images/DRANet_CVPR_2021.png" alt="DRANet project thumbnail" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/DRANet_CVPR_2021.png" alt="DRANet project thumbnail" loading="lazy"></div></div>
   <div class="paper-box-text" markdown="1">
+
+  <div class="paper-venue">CVPR <span class="paper-venue__year">2021</span></div>
 
   **DRANet: Disentangling Representation and Adaptation Networks for Unsupervised Cross-Domain Adaptation**
 

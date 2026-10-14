@@ -465,13 +465,13 @@
             margin-bottom: .65rem;
         }
 
-        > p:first-child {
+        > p:first-of-type {
             color: #172033;
             font-size: 1.08rem;
             line-height: 1.38;
         }
 
-        > p:nth-child(2) {
+        > p:nth-of-type(2) {
             color: #4b5565;
             font-size: .9rem;
             line-height: 1.55;
@@ -777,7 +777,7 @@
         padding: .9rem;
 
         .paper-box-text {
-            > p:first-child {
+            > p:first-of-type {
                 font-size: 1rem;
             }
         }
