@@ -126,7 +126,7 @@ redirect_from:
   <p class="paper-author-legend"><span><sup>*</sup> Co-first author</span><span><sup>&dagger;</sup> Corresponding author</span></p>
 
   <div class="paper-box">
-  <div class="paper-box-image"><div class="paper-visual"><img class="paper-thumbnail" src="images/TinyAstral_2026.jpg" alt="TinyAstral harness evolution and student distillation overview" width="2400" height="803" loading="lazy"></div></div>
+  <div class="paper-box-image"><div class="paper-visual"><video class="paper-video" autoplay muted loop playsinline preload="metadata" poster="images/TinyAstral_two_balls.jpg" aria-label="TinyAstral Two balls into matching boxes preview"><source src="images/videos/TinyAstral_two_balls.mp4" type="video/mp4"></video></div></div>
   <div class="paper-box-text" markdown="1">
 
   **TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents**
