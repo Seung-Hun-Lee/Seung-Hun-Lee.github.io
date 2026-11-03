@@ -136,7 +136,8 @@ redirect_from:
   <div class="paper-links">
     <a class="paper-link" href="https://arxiv.org/abs/2610.41216" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Paper</span></a>
     <a class="paper-link" href="https://garfield-kh.github.io/TinyAstral/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-hidden="true"></i><span>Project</span></a>
-    <a class="paper-link" href="https://gitcode.com/cann/cann-recipes-embodied-ai" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-link" href="https://github.com/Garfield-kh/TinyAstral" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>Code</span></a>
+    <a class="paper-stars" href="https://github.com/Garfield-kh/TinyAstral" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Garfield-kh/TinyAstral?style=social&amp;label=TinyAstral%20Stars" alt="TinyAstral GitHub stars" loading="lazy"></a>
   </div>
 
   </div>
